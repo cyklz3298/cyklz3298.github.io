@@ -20,6 +20,7 @@
                 slideshowSpeed: 5000,
                 animationDuration: 600,
                 directionNav: false,
+                pauseOnAction: false,
                 start: function (slider) {
                     $('.slides').toggleClass('animate');
                 }, //Callback: function(slider) - Fires when the slider loads the first slide 加载第一页触发
@@ -112,8 +113,10 @@
         }
         .flex-control-nav{
             height: 100%;
-            right:50%;
-            top:50%;
+            right:1%;
+            top:calc(50% - 11px);
+            z-index: 8999;
+            width: 11px;
         }
         /* .flexslider li{
             display: none;
