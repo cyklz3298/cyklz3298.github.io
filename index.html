@@ -15,8 +15,13 @@
 
     <script>
         $(window).ready(function () {
-            $('.flexslider').flexslider();
-            $('#slider').flexslider("stop"); //Stop slideshow
+            $('.flexslider').flexslider({
+                animation: "fade",
+                animationDuration: 500000000,
+                directionNav: false
+            });
+            
+           /*  $('#slider').flexslider("stop"); */ //Stop slideshow
         });
     </script>
 
