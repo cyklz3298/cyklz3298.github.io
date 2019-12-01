@@ -7,12 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
+    <link rel="stylesheet" href="/css/flexslider.css" type="text/css">
+
+    <script>
+        $(window).ready(function () {
+            $('.flexslider').flexslider();
+        });
+    </script>
+
     <!-- Demo styles -->
     <style>
         html,
         body {
             position: relative;
-            height: 100%;
+            height: 200%;
         }
 
         body {
@@ -25,14 +37,16 @@
         }
 
         .swiper-container {
-            width: 100%;
-            height: 100%;
+            /*  width: 100%;
+            height:100%; */
+            overflow: hidden;
         }
 
         .swiper-slide {
             text-align: center;
             font-size: 18px;
-            background: #fff;
+            background: rgba(10, 10, 10, 0);
+            transition: 0s;
             /* Center slide text vertically */
             display: -webkit-box;
             display: -ms-flexbox;
@@ -47,6 +61,25 @@
             -webkit-align-items: center;
             align-items: center;
         }
+
+        .swiper-slide:hover {
+            transform: scale(1.1);
+            transition: 5s;
+        }
+
+        img {
+            max-width: 100vw;
+            height: auto;
+        }
+
+        .ani {
+            animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+            ;
+        }
+
+        .flexslider {
+            border: 0;
+        }
     </style>
 </head>
 
@@ -54,46 +87,68 @@
     <!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url('img/banner_tiny01.jpg');background-size: cover;background-position: center , center;">
+            <div class="swiper-slide">
+                <div class="ani" swiper-animate-effect="fadeOut" swiper-animate-duration="0.2s"
+                    swiper-animate-delay="4.8s"><img src="/img/banner_tiny01.jpg" alt=""></div>
             </div>
-            <div class="swiper-slide" style="background-image: url('img/banner_tiny02.jpg');background-size: cover;background-position: center , center;"></div>
-          <!--   <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-            <div class="swiper-slide">Slide 10</div> -->
+            <div class="swiper-slide  ">
+                <div class="ani" swiper-animate-effect="fadeOut" swiper-animate-duration="0.2s"
+                    swiper-animate-delay="4.8s"><img src="/img/banner_tiny02.jpg" alt=""></div>
+            </div>
+            <!--   <div class="swiper-slide">Slide 3</div> -->
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
         <!-- Add Arrows -->
-      <!--   <div class="swiper-button-next"></div>
+        <!--   <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div> -->
     </div>
+    <div class="flexslider">
+        <ul class="slides">
+            <li><img src="/img/banner_tiny01.jpg" /></li>
+            <li><img src="/img/banner_tiny02.jpg" /></li>
 
+        </ul>
+    </div>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="/js/swiper.animate.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
+
             spaceBetween: 00,
             centeredSlides: true,
             autoplay: {
                 delay: 5000,
-                disableOnInteraction: true,
+                disableOnInteraction: false,
             },
-             pagination: {
+            pagination: {
                 el: '.swiper-pagination',
                 clickable: false,
             },
-           /*  navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },  */
+            on: {
+                init: function () {
+                    swiperAnimateCache(this); //隐藏动画元素 
+                    swiperAnimate(this); //初始化完成开始动画
+                },
+                slideChangeTransitionEnd: function () {
+                    swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                    //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+                }
+            }
+            /*  navigation: {
+                 nextEl: '.swiper-button-next',
+                 prevEl: '.swiper-button-prev',
+             },  */
         });
+
+
     </script>
+
+
+
+
 </body>
 
 </html>
