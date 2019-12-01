@@ -20,7 +20,7 @@
                 slideshowSpeed: 5000,
                 animationDuration: 600,
                 directionNav: false,
-                pauseOnAction: false,
+                pauseOnAction: false/*  */,
                 start: function (slider) {
                     $('.slides').toggleClass('animate');
                 }, //Callback: function(slider) - Fires when the slider loads the first slide 加载第一页触发
@@ -102,10 +102,11 @@
             overflow: hidden;
             position: relative;
         margin-bottom:0 ;
+        height: 100vh;
        
         }
         .slides{
-            padding-bottom: 0px;
+           
         }
         .slides.animate {
             transform: scale(1.1);
