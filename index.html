@@ -44,13 +44,10 @@
             height: 200%;
         }
 
-        .slides.animate {
-            transform: scale(1.1);
-            transition: 10s;
-        }
+        
 
         body {
-            background: #eee;
+           /*  background: #eee; */
             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
             font-size: 14px;
             color: #000;
@@ -103,9 +100,24 @@
             border: 0;
             overflow: hidden;
             position: relative;
-            
+        margin-bottom:0 ;
+       
         }
-
+        .slides{
+            padding-bottom: 0px;
+        }
+        .slides.animate {
+            transform: scale(1.1);
+            transition: 10s;
+        }
+        .flex-control-nav{
+            height: 100%;
+            right:50%;
+            top:50%;
+        }
+        /* .flexslider li{
+            display: none;
+        } */
     </style>
 </head>
 
@@ -136,6 +148,8 @@
 
         </ul>
     </div>
+
+    <div>1</div>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="/js/swiper.animate.min.js"></script>
 
