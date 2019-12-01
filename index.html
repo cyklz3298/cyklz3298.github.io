@@ -17,11 +17,22 @@
         $(window).ready(function () {
             $('.flexslider').flexslider({
                 animation: "fade",
-                animationDuration: 500000000,
-                directionNav: false
+                slideshowSpeed: 5000,
+                animationDuration: 600,
+                directionNav: false,
+                start: function (slider) {
+                    $('.slides').toggleClass('animate');
+                }, //Callback: function(slider) - Fires when the slider loads the first slide 加载第一页触发
+                before: function (slider) {
+                    $('.slides').toggleClass('animate');
+                }, //Callback: function(slider) - Fires asynchronously with each slider animation 每个滚动动画开始时异步触发
+                after: function (slider) {
+                    $('.slides').toggleClass('animate');
+                }, //Callback: function(slider) - Fires after each slider animation completes 每个滚动动画结束时触发
+                end: function (slider) {
+                }
             });
-            
-           /*  $('#slider').flexslider("stop"); */ //Stop slideshow
+            /*  $('#slider').flexslider("stop"); */ //Stop slideshow
         });
     </script>
 
@@ -31,6 +42,11 @@
         body {
             position: relative;
             height: 200%;
+        }
+
+        .slides.animate {
+            transform: scale(1.1);
+            transition: 10s;
         }
 
         body {
@@ -85,13 +101,17 @@
 
         .flexslider {
             border: 0;
+            overflow: hidden;
+            position: relative;
+            
         }
+
     </style>
 </head>
 
 <body>
     <!-- Swiper -->
-    <div class="swiper-container">
+   <!--  <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="ani" swiper-animate-effect="fadeOut" swiper-animate-duration="0.05s"
@@ -100,15 +120,15 @@
             <div class="swiper-slide  ">
                 <div class="ani" swiper-animate-effect="fadeOut" swiper-animate-duration="0.05s"
                     swiper-animate-delay="4.95s"><img src="/img/banner_tiny02.jpg" alt=""></div>
-            </div>
+            </div> -->
             <!--   <div class="swiper-slide">Slide 3</div> -->
-        </div>
+      <!--   </div> -->
         <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+      <!--   <div class="swiper-pagination"></div> -->
         <!-- Add Arrows -->
         <!--   <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div> -->
-    </div>
+   <!--  </div> -->
     <div class="flexslider">
         <ul class="slides">
             <li><img src="/img/banner_tiny01.jpg" /></li>
