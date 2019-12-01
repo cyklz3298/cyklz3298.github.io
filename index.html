@@ -45,10 +45,10 @@
             height: 200%;
         }
 
-        
+
 
         body {
-           /*  background: #eee; */
+            /*  background: #eee; */
             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
             font-size: 14px;
             color: #000;
@@ -101,24 +101,27 @@
             border: 0;
             overflow: hidden;
             position: relative;
-        margin-bottom:0 ;
-        height: 100vh;
-       
+            margin-bottom: 0;
+
         }
-        .slides{
-           
-        }
+
+        .slides {}
+
         .slides.animate {
             transform: scale(1.1);
             transition: 10s;
-        }
-        .flex-control-nav{
             height: 100%;
-            right:1%;
-            top:calc(50% - 11px);
+        }
+
+        .flex-control-nav {
+            height: 100%;
+            right: 1%;
+            top: calc(50% - 11px);
             z-index: 8999;
             width: 11px;
+            position: absolute;
         }
+
         /* .flexslider li{
             display: none;
         } */
@@ -127,24 +130,22 @@
 
 <body>
     <!-- Swiper -->
-   <!--  <div class="swiper-container">
+    <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="ani" swiper-animate-effect="fadeOut" swiper-animate-duration="0.05s"
-                    swiper-animate-delay="4.95s"><img src="/img/banner_tiny01.jpg" alt=""></div>
+                <div><img src="/img/banner_tiny01.jpg" alt=""></div>
             </div>
             <div class="swiper-slide  ">
-                <div class="ani" swiper-animate-effect="fadeOut" swiper-animate-duration="0.05s"
-                    swiper-animate-delay="4.95s"><img src="/img/banner_tiny02.jpg" alt=""></div>
+                <div><img src="/img/banner_tiny02.jpg" alt=""></div>
             </div> -->
             <!--   <div class="swiper-slide">Slide 3</div> -->
-      <!--   </div> -->
+        </div>
         <!-- Add Pagination -->
-      <!--   <div class="swiper-pagination"></div> -->
+        <!--   <div class="swiper-pagination"></div> -->
         <!-- Add Arrows -->
         <!--   <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div> -->
-   <!--  </div> -->
+    </div>
     <div class="flexslider">
         <ul class="slides">
             <li><img src="/img/banner_tiny01.jpg" /></li>
@@ -163,6 +164,10 @@
 
             spaceBetween: 00,
             centeredSlides: true,
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true,
+            },
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: false,
@@ -171,16 +176,16 @@
                 el: '.swiper-pagination',
                 clickable: false,
             },
-            on: {
-                init: function () {
-                    swiperAnimateCache(this); //隐藏动画元素 
-                    swiperAnimate(this); //初始化完成开始动画
-                },
-                slideChangeTransitionEnd: function () {
-                    swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
-                    //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
-                }
-            }
+            /*   on: {
+                  init: function () {
+                      swiperAnimateCache(this); //隐藏动画元素 
+                      swiperAnimate(this); //初始化完成开始动画
+                  },
+                  slideChangeTransitionEnd: function () {
+                      swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                      //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+                  }
+              } */
             /*  navigation: {
                  nextEl: '.swiper-button-next',
                  prevEl: '.swiper-button-prev',
