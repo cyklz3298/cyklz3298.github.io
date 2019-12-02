@@ -1,11 +1,29 @@
+html,
+body {
+    position: relative;
+   
+}
+
+body {
+  /*  background: #eee; */
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding-top: 72px;
+  /* color: #000; */
+  /* margin: 0;
+  padding: 0; */
+}
+
+
+
 #about {
   background-image: url("../img/03.jpg");
   background-position: center, center;
   background-size: cover;
-  max-width: 100vw;
+  max-width: 100%;
   height: 100vh;
   .mask {
-    width: 100vw;
+    max-width: 100%;
     height: 100vh;
     background-color: rgba(236, 236, 236, 0.397);
   }
