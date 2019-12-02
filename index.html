@@ -12,6 +12,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/js/jquery.flexslider.js"></script>
     <link rel="stylesheet" href="/css/flexslider.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 
     <script>
         $(window).ready(function () {
@@ -28,10 +31,10 @@
                     $('.slides').toggleClass('animate');
                 }, //Callback: function(slider) - Fires asynchronously with each slider animation 每个滚动动画开始时异步触发
                 after: function (slider) {
-                    $('.slides').toggleClass('animate'); 
+                    $('.slides').toggleClass('animate');
                 }, //Callback: function(slider) - Fires after each slider animation completes 每个滚动动画结束时触发
                 end: function (slider) {
-                  /*   $('.slides').toggleClass('animate'); */
+                    /*   $('.slides').toggleClass('animate'); */
                 }
             });
             /*  $('#slider').flexslider("stop"); */ //Stop slideshow
@@ -107,15 +110,16 @@
             height: auto;
         }
 
-       
+
 
         .slides.animate {
             transform: scale(1.1);
             transition: 5s;
-            
-           
+
+
         }
-        .slides.return{
+
+        .slides.return {
             transform: none;
             transition: 0s;
         }
@@ -129,6 +133,13 @@
             position: absolute;
         }
 
+        .navbar {
+            /* background: rgba(39, 39, 39, 0.856); */
+            background-image: url("img/01.jpg");
+
+        }
+
+
         /* .flexslider li{
             display: none;
         } */
@@ -136,39 +147,71 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark  mx-auto fixed-top ">
+
+        <div class="container">
+            <a class="navbar-brand " href="#">
+                <img src="./img/LOGO-03.png" width="50" height="50" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav text-center  ml-auto">
+                    <a class="nav-item nav-link  " href="#page01">最新消息</a>
+                    <!--  active <span class="sr-only ">(current)</span></a> justify-content-end -->
+                    <a class="nav-item nav-link" href="#page02">第二頁</a>
+                    <a class="nav-item nav-link" href="#page03">第三頁</a>
+                    <!-- <a class="nav-item nav-link " href="#" tabindex="-1" aria-disabled="true">第四頁</a>  -->
+                </div>
+            </div>
+        </div>
+    </nav>
     <!-- Swiper -->
-    <div class="swiper-container">
+    <!--  <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div><img  src="/img/banner_tiny01.jpg" alt=""></div>
+                <div><img src="/img/banner_tiny01.jpg" alt=""></div>
             </div>
             <div class="swiper-slide  ">
-                <div><img  src="/img/banner_tiny02.jpg" alt=""></div>
-            </div> -->
-            <!--   <div class="swiper-slide">Slide 3</div> -->
-        </div>
-        <!-- Add Pagination -->
-          <div class="swiper-pagination"></div> 
-        <!-- Add Arrows -->
-        <!--   <div class="swiper-button-next"></div>
+                <div><img src="/img/banner_tiny02.jpg" alt=""></div>
+            </div> --> -->
+    <!--   <div class="swiper-slide">Slide 3</div> -->
+    <!--   </div> -->
+    <!-- Add Pagination -->
+    <!--   <div class="swiper-pagination"></div> -->
+    <!-- Add Arrows -->
+    <!--   <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div> -->
-    </div>
-    <div class="flexslider">
-        <ul class="slides">
-            <li><img src="/img/banner_tiny01.jpg" /></li>
-            <li><img src="/img/banner_tiny02.jpg" /></li>
+    <!--  </div> -->
+    <section id="#page01">
+        <div class="flexslider">
+            <ul class="slides">
+                <li><img src="/img/banner_tiny01.jpg" /></li>
+                <li><img src="/img/banner_tiny02.jpg" /></li>
 
-        </ul>
-    </div>
+            </ul>
+        </div>
+    </section>
 
-    <div>1</div>
+    <div></div>
+    
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="/js/swiper.animate.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
-            slideToClickedSlide:false,
+            slideToClickedSlide: false,
             spaceBetween: 00,
             centeredSlides: true,
             effect: 'fade',
@@ -182,7 +225,7 @@
             pagination: {
                 el: '.swiper-pagination',
                 clickable: false,
-            },
+            }
             /*   on: {
                   init: function () {
                       swiperAnimateCache(this); //隐藏动画元素 
