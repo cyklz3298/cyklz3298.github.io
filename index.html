@@ -28,10 +28,10 @@
                     $('.slides').toggleClass('animate');
                 }, //Callback: function(slider) - Fires asynchronously with each slider animation 每个滚动动画开始时异步触发
                 after: function (slider) {
-                    $('.slides').toggleClass('animate');
+                    $('.slides').toggleClass('animate'); 
                 }, //Callback: function(slider) - Fires after each slider animation completes 每个滚动动画结束时触发
                 end: function (slider) {
-                    $('.slides').toggleClass('animate');
+                  /*   $('.slides').toggleClass('animate'); */
                 }
             });
             /*  $('#slider').flexslider("stop"); */ //Stop slideshow
@@ -85,7 +85,7 @@
 
         .swiper-slide:hover {
             transform: scale(1.1);
-            transition: 5s;
+            transition: 10s;
         }
 
         img {
@@ -107,7 +107,7 @@
             height: auto;
         }
 
-        .slides {}
+       
 
         .slides.animate {
             transform: scale(1.1);
@@ -140,10 +140,10 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div><img src="/img/banner_tiny01.jpg" alt=""></div>
+                <div><img  src="/img/banner_tiny01.jpg" alt=""></div>
             </div>
             <div class="swiper-slide  ">
-                <div><img src="/img/banner_tiny02.jpg" alt=""></div>
+                <div><img  src="/img/banner_tiny02.jpg" alt=""></div>
             </div> -->
             <!--   <div class="swiper-slide">Slide 3</div> -->
         </div>
@@ -172,9 +172,9 @@
             spaceBetween: 00,
             centeredSlides: true,
             effect: 'fade',
-            fadeEffect: {
+            /* fadeEffect: {
                 crossFade: true,
-            },
+            }, */
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: false,
