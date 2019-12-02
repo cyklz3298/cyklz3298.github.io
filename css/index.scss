@@ -1,6 +1,7 @@
 html,
 body {
-  position: relative;
+    position: relative;
+   
 }
 
 body {
@@ -10,20 +11,21 @@ body {
   padding-top: 72px;
   /* color: #000; */
 /*    margin: 0; */
-  padding-right: 0; 
-  margin: 0;
+ /*  padding-right: 0; 
+  margin: 0; */
 }
 
+
+
 #about {
- 
-    /*background-image: url("../img/03.jpg");
-    background-position: center, center;
-    background-size:contain;
-    .mask { */
-     img{
-      width: 100%;
-    height: auto;
-     }
-    /* background-color: rgba(236, 236, 236, 0.397);  */
-  
+  background-image: url("../img/03.jpg");
+  background-position: center, center;
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+  .mask {
+    max-width: 100%;
+    height: 100vh;
+    background-color: rgba(236, 236, 236, 0.397);
+  }
 }
