@@ -9,21 +9,21 @@ body {
   font-size: 14px;
   padding-top: 72px;
   /* color: #000; */
-  /* margin: 0;
-  padding: 0; */
+  /*    margin: 0; */
+  padding-right: 0;
+  margin: 0;
 }
 
-#about .container {
-  /*   
-    max-width: 100%; */
-  height: 100vh;
-  background-image: url("../img/03.jpg");
-  background-position: center, center;
-  background-size: contain;
+#about {
+  /*background-image: url("../img/03.jpg");
+    background-position: center, center;
+    background-size:contain;
+    .mask { */
+  /* background-color: rgba(236, 236, 236, 0.397);  */
 }
 
-#about .container .mask {
-  max-width: 100%;
-  background-color: rgba(236, 236, 236, 0.397);
+#about img {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=index.css.map */

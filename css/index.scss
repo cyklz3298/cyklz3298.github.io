@@ -9,19 +9,21 @@ body {
   font-size: 14px;
   padding-top: 72px;
   /* color: #000; */
-  /* margin: 0;
-  padding: 0; */
+/*    margin: 0; */
+  padding-right: 0; 
+  margin: 0;
 }
 
 #about {
-  .container {
-  /*background-image: url("../img/03.jpg");
+ 
+    /*background-image: url("../img/03.jpg");
     background-position: center, center;
     background-size:contain;
     .mask { */
-      max-width: 100%;
-height: auto;
-      background-color: rgba(236, 236, 236, 0.397);
-    }
-  }
+     img{
+      width: 100%;
+    height: auto;
+     }
+    /* background-color: rgba(236, 236, 236, 0.397);  */
+  
 }
