@@ -12,8 +12,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/js/jquery.flexslider.js"></script>
     <link rel="stylesheet" href="/css/flexslider.css" type="text/css">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
 
 
     <script>
@@ -47,6 +50,7 @@
         body {
             position: relative;
             height: 200%;
+            padding-top: 72.91px;
         }
 
 
@@ -127,7 +131,7 @@
         .flex-control-nav {
             height: 100%;
             right: 3%;
-            top: calc(89% - 11px);
+            top: calc(94% - 11px);
             z-index: 8999;
             width: 11px;
             position: absolute;
@@ -139,7 +143,18 @@
 
         }
 
+        /* 
 
+        @keyframes blink {
+            0% {
+               transform: scale(1);
+            }
+           
+            100% {
+                transform: scale(1);
+            }
+        }
+ */
         /* .flexslider li{
             display: none;
         } */
@@ -176,7 +191,7 @@
             </div>
             <div class="swiper-slide  ">
                 <div><img src="/img/banner_tiny02.jpg" alt=""></div>
-            </div> --> -->
+            </div> -->
     <!--   <div class="swiper-slide">Slide 3</div> -->
     <!--   </div> -->
     <!-- Add Pagination -->
@@ -185,7 +200,7 @@
     <!--   <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div> -->
     <!--  </div> -->
-    <section id="#page01">
+    <section id="#banner">
         <div class="flexslider">
             <ul class="slides">
                 <li><img src="/img/banner_tiny01.jpg" /></li>
@@ -195,11 +210,17 @@
         </div>
     </section>
 
+    <section  id="about">
+        <div class="mask"></div>
+
+    </section>
+
     <div></div>
-    
+
+
+
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="/js/swiper.animate.min.js"></script>
-
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -241,12 +262,7 @@
                  prevEl: '.swiper-button-prev',
              },  */
         });
-
-
     </script>
-
-
-
 
 </body>
 
