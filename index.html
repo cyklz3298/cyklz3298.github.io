@@ -31,7 +31,7 @@
                     $('.slides').toggleClass('animate');
                 }, //Callback: function(slider) - Fires after each slider animation completes 每个滚动动画结束时触发
                 end: function (slider) {
-                  
+                    $('.slides').toggleClass('return');
                 }
             });
             /*  $('#slider').flexslider("stop"); */ //Stop slideshow
@@ -117,7 +117,7 @@
         }
         .slides.return{
             transform: none;
-            transition: 10s;
+            transition: 0s;
         }
 
         .flex-control-nav {
