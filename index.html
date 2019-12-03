@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>野人火鍋 Shabu</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="/css/flexslider.css" type="text/css">
@@ -73,7 +73,9 @@
 
         .swiper-slide:hover {
             transform: scale(1.1);
+            -webkit-transform: scale(1.1);
             transition: 10s;
+            -webkit-transition: 10s;
         }
 
         img {
@@ -119,9 +121,10 @@
         }
 
         .navbar {
-            /* background: rgba(39, 39, 39, 0.856); */
-            background-image: url("img/01.jpg");
-
+             background-color: rgba(0,0,0,.5) ;
+           /*   background-image: url("img/08.png");
+             background-size: contain;
+            background-repeat: no-repeat; */
         }
 
         /* 
@@ -143,8 +146,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark  mx-auto fixed-top ">
-
+    <nav class="navbar  navbar-expand-lg navbar-dark  mx-auto fixed-top ">
+       
         <div class="container">
             <a class="navbar-brand " href="#">
                 <img src="./img/LOGO-03.png" width="50" height="50" class="d-inline-block align-top" alt="">
@@ -195,26 +198,28 @@
         <!--  <div class="about_img">
             <img style="opacity: 0.7" src="./img/03.png" alt="">
         </div> -->
-        <div class="mask">
+        <div class="mask  ">
             <div class="container d-flex ">
                 <div class="row  flex-row-reverse  ">
                        
-                    <div class="col-lg-2  d-flex  "style=" ">
+                    <div class="col-lg-1   d-flex "style="margin-top:4vw">
+                     
+                        <div class="title_vtrl  " style="border-top: 1.5px solid;font-size:2.5rem;padding-top: 10px;"> <b>關於野人</b> </div>
+                        
+                        <div class="title_vtrl " style="font-size:1.4rem;color:red;margin-top:130px">about</div>
                        
-                        <div class="title_vtrl  align-self-center" style="border-top: 1.5px solid ;font-size:2.5rem;margin-bottom: 21vw;"> <b>關於野人</b> </div>
-                        <div class="title_vtrl align-self-center" style="font-size:1.4rem;color:red;margin-bottom: 8vw;">about</div>
                     </div>
                    <!--  <div class="col-1 align-self-center">
                         
                     </div>  -->
-                    <div class="col-lg-7 align-self-center">
+                    <div class="col-lg-8 align-self-center">
                         <img width="100%" src="img/04.jpg" alt="">
                     </div>
                     <div class="col-lg-3 align-self-center">
-                        <p style="font-weight:600;font-size:1.2rem;color:rgb(121, 103, 2);border-bottom:1.5px rgb(121, 103, 2) solid; ">「野人」是個名詞，也是個生活態度</p>
+                        <p style="display:inline-block;font-weight:600;font-size:1.2rem;color:rgb(121, 103, 2);border-bottom:1.5px rgb(121, 103, 2) solid; ">「野人」是個名詞，也是種生活態度</p>
                         <p style="font-weight:600;text-align:justify;font-size:1.2rem">在野人的世界: <br>
                             「肉，沒有冷凍 <br>
-                            湯，沒有多餘的添加物 <br>
+                            &emsp;湯，沒有多餘的添加物 <br>
                             讓用餐的的一切回歸最初的感動」
                         </p>
                     </div>
@@ -222,7 +227,47 @@
             </div>
         </div>
     </section>
-    <div class="">1</div>
+    
+    <section id="news">
+        <div class="container">
+            
+                <div class="card-deck">
+                    <div class="card">
+                      <img class="card-img-top" src="..." alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src="..." alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src="..." alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        
+
+
+    </section>
 
 
 
