@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/index.css" type="text/css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script src="/js/jquery.flexslider.js"></script>
 
     <script>
@@ -44,7 +44,12 @@
                 }
             });
             $('#fs02').flexslider({
-                slideshowSpeed: 0,
+                slideshowSpeed: 5000,
+                directionNav: false,
+            });
+            $('#fs03').flexslider({
+                slideshowSpeed: 5000,
+                directionNav: false,
             });
             /*  $('#slider').flexslider("stop"); */ //Stop slideshow
         });
@@ -53,8 +58,8 @@
     <!-- Demo styles -->
     <style>
         .swiper-container {
-            /*  width: 100%;
-            height:100%; */
+          width: 100%;
+            height:75vh;
             overflow: hidden;
         }
 
@@ -78,12 +83,12 @@
             align-items: center;
         }
 
-        .swiper-slide:hover {
+        /*  .swiper-slide:hover {
             transform: scale(1.1);
             -webkit-transform: scale(1.1);
             transition: 10s;
             -webkit-transition: 10s;
-        }
+        } */
 
         img {
             max-width: 100vw;
@@ -119,7 +124,7 @@
             transition: 0s;
         }
 
-        .flex-control-nav {
+        #fs01 .flex-control-nav {
             height: 100%;
             right: 3%;
             top: calc(94% - 11px);
@@ -127,6 +132,25 @@
             width: 11px;
             position: absolute;
         }
+
+        #fs02 .flex-control-nav {
+            height: 100%;
+            right: 3%;
+            top: calc(90% - 11px);
+            z-index: 8999;
+            width: 11px;
+            position: absolute;
+        }
+
+        #fs03 .flex-control-nav {
+            height: 100%;
+            right: 3%;
+            top: calc(90% - 11px);
+            z-index: 8999;
+            width: 11px;
+            position: absolute;
+        }
+
 
         .navbar {
             background-color: rgba(0, 0, 0, .0);
@@ -169,29 +193,15 @@
                     <a class="nav-item nav-link  " href="#about">關於野人</a>
                     <!--  active <span class="sr-only ">(current)</span></a> justify-content-end -->
                     <a class="nav-item nav-link" href="#news">最新消息</a>
+                    <a class="nav-item nav-link" href="#soup">精選鍋物</a>
+                    <a class="nav-item nav-link" href="#menu">野人菜單</a>
                     <a class="nav-item nav-link" href="https://inline.app/booking/savageshabu">線上訂位</a>
                     <!-- <a class="nav-item nav-link " href="#" tabindex="-1" aria-disabled="true">第四頁</a>  -->
                 </div>
             </div>
         </div>
     </nav>
-    <!-- Swiper -->
-    <!--  <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div><img src="/img/banner_tiny01.jpg" alt=""></div>
-            </div>
-            <div class="swiper-slide  ">
-                <div><img src="/img/banner_tiny02.jpg" alt=""></div>
-            </div> -->
-    <!--   <div class="swiper-slide">Slide 3</div> -->
-    <!--   </div> -->
-    <!-- Add Pagination -->
-    <!--   <div class="swiper-pagination"></div> -->
-    <!-- Add Arrows -->
-    <!--   <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
-    <!--  </div> -->
+
     <section id="banner">
         <div class="flexslider" id="fs01">
             <ul class="slides" id="slides01">
@@ -275,24 +285,93 @@
     </section>
 
     <section id="soup">
-        <div class="container-fluid px-0">
-            <div class="row">
-                <div class="col-lg-6">
+        <div class="container-fluid ">
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-auto  p-5">
+                    <div class="" style="line-height:1.2;border-top:2px solid;font-size:1.2rem; padding-top:10px; ">
+                        <b style="font-size:2.2rem">精選鍋物</b><br>
+                        <c style="margin-left: 110px;color:rgb(172, 0, 0)">soup</c>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters  　">
+                <div class="col-lg-6  ">
                     <div class="flexslider" id="fs02">
                         <ul class="slides">
-                            <li><img src="./img/banner_tiny01.jpg" /></li>
-                            <li><img src="./img/banner_tiny02.jpg" /></li>
+                            <li><img src="./img/23.jpg" /></li>
+                            <li><img src="./img/22.jpg" /></li>
+                            <li><img src="./img/24.jpg" /></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 ">
+                    <div class="flexslider p-5 " id="fs03">
+                        <ul class="slides">
+                            <li>
+                                <div class="textConttent01  ">
+                                    <h1 class="" style="padding-left: 15px; border-left:3px rgb(132, 141, 0) solid">
+                                        北海道牛乳</h1>
+                                    <p class="pt-5">由北海道鮮奶、昆布、大骨、洋蔥、白甘蔗、小魚乾、柴魚等熬煮而成</p>
+                                </div>
 
+                            </li>
+                            <li>
+                                <div class="textConttent01  justify-content-center ">
+                                    <h1 class="" style="padding-left: 15px; border-left:3px rgb(132, 141, 0) solid">
+                                        厚岸昆布大骨</h1>
+                                    <p class="pt-5">由昆布、大骨、洋蔥、白甘蔗、小魚乾、柴魚等熬煮而成</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="textConttent01  justify-content-center">
+                                    <h1 class="" style="padding-left: 15px; border-left:3px rgb(132, 141, 0) solid">
+                                        野人不吃菜</h1>
+                                    <p class="pt-5">肉食主義者。菜盤可更換</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </div>
 
         </div>
     </section>
 
+    <section id="menu">
+        <!-- Swiper -->
+        <div class="container-fluid ">
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-auto  p-5">
+                    <div class="" style="line-height:1.2;border-top:2px solid;font-size:1.2rem; padding-top:10px; ">
+                        <b style="font-size:2.2rem">野人菜單</b><br>
+                        <c style="margin-left: 110px;color:rgb(172, 0, 0)">menu</c>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/img/菜單-01.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide  ">
+                        <img src="/img/菜單-02.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="/img/菜單-03.jpg" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <p>本專題僅供上益資訊個人專題使用</p>
+    </footer>
 
     <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="/js/swiper.animate.min.js"></script> -->
@@ -321,6 +400,10 @@
             pagination: {
                 el: '.swiper-pagination',
                 clickable: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             }
             /*   on: {
                   init: function () {
@@ -332,10 +415,7 @@
                       //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
                   }
               } */
-            /*  navigation: {
-                 nextEl: '.swiper-button-next',
-                 prevEl: '.swiper-button-prev',
-             },  */
+
         });
     </script>
 
@@ -359,7 +439,7 @@
         $(window).scroll(function () {
 
             var scrollTop = $(window).scrollTop();
-          /*   console.log(scrollTop); */
+            /*   console.log(scrollTop); */
             if ($(window).width() <= 414) {
                 // JavaScript here 
                 // 當視窗寬度小等於414px時執行
