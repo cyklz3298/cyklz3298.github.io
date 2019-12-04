@@ -19,6 +19,10 @@
     <script src="/js/jquery.flexslider.js"></script>
 
     <script>
+
+
+
+
         $(document).ready(function () {
             $('#fs01').flexslider({
                 animation: "fade",
@@ -100,9 +104,6 @@
             height: auto;
         }
 
-        #fs02 {
-            max-width: 50%;
-        }
 
 
 
@@ -128,7 +129,7 @@
         }
 
         .navbar {
-            background-color: rgba(0, 0, 0, .7);
+            background-color: rgba(0, 0, 0, .0);
             /*   background-image: url("img/08.png");
              background-size: contain;
             background-repeat: no-repeat; */
@@ -153,7 +154,7 @@
 </head>
 
 <body>
-    
+
     <nav class="navbar  navbar-expand-lg navbar-dark  mx-auto fixed-top ">
         <div class="container">
             <a class="navbar-brand " href="#">
@@ -168,7 +169,7 @@
                     <a class="nav-item nav-link  " href="#about">關於野人</a>
                     <!--  active <span class="sr-only ">(current)</span></a> justify-content-end -->
                     <a class="nav-item nav-link" href="#news">最新消息</a>
-                    <a class="nav-item nav-link" href="#page03">第三頁</a>
+                    <a class="nav-item nav-link" href="https://inline.app/booking/savageshabu">線上訂位</a>
                     <!-- <a class="nav-item nav-link " href="#" tabindex="-1" aria-disabled="true">第四頁</a>  -->
                 </div>
             </div>
@@ -191,7 +192,7 @@
     <!--   <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div> -->
     <!--  </div> -->
-    <section id="#banner">
+    <section id="banner">
         <div class="flexslider" id="fs01">
             <ul class="slides" id="slides01">
                 <li><img src="./img/banner_tiny01.jpg" /></li>
@@ -228,8 +229,7 @@
                         <p
                             style="display:inline-block;font-weight:600;font-size:1.2rem;color:rgb(121, 103, 2);border-bottom:1.5px rgb(121, 103, 2) solid; ">
                             「野人」是個名詞，也是種生活態度</p>
-                        <p
-                            style=" font-weight:600;text-align:justify;font-size:1rem">
+                        <p style=" font-weight:600;text-align:justify;font-size:1rem">
                             在野人的世界: <br>
                             「肉，沒有冷凍 <br>
                             湯，沒有多餘的添加物 <br>
@@ -275,12 +275,21 @@
     </section>
 
     <section id="soup">
-        <div class="flexslider" id="fs02">
-            <ul class="slides">
-                <li><img src="./img/banner_tiny01.jpg" />1</li>
-                <li><img src="./img/banner_tiny02.jpg" />2</li>
+        <div class="container-fluid px-0">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="flexslider" id="fs02">
+                        <ul class="slides">
+                            <li><img src="./img/banner_tiny01.jpg" /></li>
+                            <li><img src="./img/banner_tiny02.jpg" /></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
 
-            </ul>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -327,6 +336,50 @@
                  nextEl: '.swiper-button-next',
                  prevEl: '.swiper-button-prev',
              },  */
+        });
+    </script>
+
+    <script>
+        var body = document.body;
+        var bsh = body.scrollHeight;
+        var w_width = window.screen.width;
+        var wsh = window.screen.height;
+
+        /*   console.log(body.scrollHeight);  */
+        /* if (w_width > 414) {
+            var all = bsh - wsh - 80
+        } else {
+            var all = bsh - wsh - 10
+        } */
+
+        /*  console.log(bsh-wsh);
+ 
+         console.log(window.screen.height); */
+
+        $(window).scroll(function () {
+
+            var scrollTop = $(window).scrollTop();
+            console.log(scrollTop);
+            if ($(window).width() <= 414) {
+                // JavaScript here 
+                // 當視窗寬度小等於414px時執行
+                if (scrollTop > 100) {
+
+                    $(".navbar").css("background-color", "rgba(0, 0, 0, 0.8)");
+                } else {
+                    $(".navbar").css("background-color", "rgba(0, 0, 0, 0)");
+                }
+            } else {
+                // JavaScript here
+                // 當視窗寬度不小於414px時執行
+                if (scrollTop > 700) {
+
+                    $(".navbar").css("background-color", "rgba(0, 0, 0, 0.8)");
+                } else {
+                    $(".navbar").css("background-color", "rgba(0, 0, 0, 0)");
+                }
+            }
+
         });
     </script>
 
