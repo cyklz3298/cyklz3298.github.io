@@ -2,6 +2,7 @@
 html,
 body {
   position: relative;
+  scroll-behavior: smooth;
 }
 
 .title_vtrl {
@@ -43,9 +44,9 @@ nav .navbar-nav .nav-item {
 }
 
 nav .navbar-nav .nav-item:hover {
-  /*  background-color: rgb(190, 189, 189); */
-  /*   color: black !important; */
-  font-weight: 540;
+  background-color: #b6b6b6;
+  color: black !important;
+  font-weight: 550;
   font-size: 20px;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
@@ -106,6 +107,12 @@ nav .navbar-nav .nav-item:hover {
   }
 }
 
+@media screen and (max-width: 414px) {
+  #about .mask {
+    height: 100vh;
+  }
+}
+
 #about .container {
   height: 90vh;
   /* position: absolute;
@@ -123,6 +130,12 @@ top:0%; */
 @media screen and (max-width: 768px) {
   #about .container {
     height: 90vh;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #about .container {
+    height: 80vh;
   }
 }
 
