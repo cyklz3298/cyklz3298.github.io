@@ -46,24 +46,31 @@ nav {
       opacity: 0.99;
     }
   }
-  .centerTitle{
-    img{
+  .centerTitle {
+    img {
       width: 200px;
     }
     position: absolute;
-    z-index:5;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-100%);
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
   }
   .arrow {
     width: 50px;
     z-index: 5;
-
     position: absolute;
     bottom: 16%;
     left: 50%;
     transform: translateX(-50%);
+    
+    animation-duration:1.6s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
   }
 }
 #about {

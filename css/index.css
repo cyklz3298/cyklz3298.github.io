@@ -60,6 +60,12 @@ nav .navbar-nav .nav-item:hover {
   top: 50%;
   -webkit-transform: translate(-50%, -100%);
           transform: translate(-50%, -100%);
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 #banner .centerTitle img {
@@ -74,6 +80,12 @@ nav .navbar-nav .nav-item:hover {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 #about {
