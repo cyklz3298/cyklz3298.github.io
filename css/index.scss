@@ -40,8 +40,30 @@ nav {
   }
 }
 #banner {
-  img {
-    opacity: 0.99;
+  position: relative;
+  .slides {
+    img {
+      opacity: 0.99;
+    }
+  }
+  .centerTitle{
+    img{
+      width: 200px;
+    }
+    position: absolute;
+    z-index:5;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-100%);
+  }
+  .arrow {
+    width: 50px;
+    z-index: 5;
+
+    position: absolute;
+    bottom: 16%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 #about {
@@ -123,7 +145,7 @@ top:0%; */
 #soup {
   background-image: url("../img/16.jpg");
   background-attachment: fixed;
- padding-top: 50px;
+  padding-top: 50px;
   background-size: cover;
   background-repeat: repeat;
   width: 100%;
@@ -131,10 +153,8 @@ top:0%; */
   .container-fluid {
     padding-left: 0;
     padding-right: 0;
-    
+
     #fs02 {
-     
-     
       overflow: hidden;
       position: relative;
       margin-bottom: 0;
@@ -142,32 +162,37 @@ top:0%; */
       height: auto;
     }
     #fs03 {
-     
-     background-color: rgba(255, 255, 255, 0);
+      background-color: rgba(255, 255, 255, 0);
       overflow: hidden;
       position: relative;
       margin-bottom: 0;
       max-width: 100%;
       height: auto;
-  }
+    }
   }
 }
 #menu {
   background-image: url("../img/16.jpg");
   background-attachment: fixed;
- padding-top: 50px;
+  padding-top: 50px;
   background-size: cover;
   background-repeat: repeat;
   width: 100%;
-  height: 100vh;
+  height: AUTO;
+  .swiper-container {
+    img {
+      height: 67vh;
+    }
+  }
 }
-footer{
+
+footer {
   text-align: center;
-  padding:20px 40px;
-  p{
-   font-size: 1.1rem;
+  padding: 20px 40px;
+  p {
+    font-size: 1.1rem;
     margin: 0;
   }
-  color:white;
+  color: white;
   background-color: black;
 }

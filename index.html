@@ -13,54 +13,19 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link href="./css/lightbox.css" rel="stylesheet" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script src="/js/jquery.flexslider.js"></script>
-
-    <script>
-
-
-
-
-        $(document).ready(function () {
-            $('#fs01').flexslider({
-                animation: "fade",
-                slideshowSpeed: 5000,
-                animationDuration: 600,
-                directionNav: false,
-                pauseOnAction: false,
-                start: function (slider) {
-                    $('#slides01').toggleClass('animate');
-                }, //Callback: function(slider) - Fires when the slider loads the first slide 加载第一页触发
-                before: function (slider) {
-                    $('#slides01').toggleClass('animate');
-                }, //Callback: function(slider) - Fires asynchronously with each slider animation 每个滚动动画开始时异步触发
-                after: function (slider) {
-                    $('#slides01').toggleClass('animate');
-                }, //Callback: function(slider) - Fires after each slider animation completes 每个滚动动画结束时触发
-                end: function (slider) {
-                    /*   $('.slides').toggleClass('animate'); */
-                }
-            });
-            $('#fs02').flexslider({
-                slideshowSpeed: 5000,
-                directionNav: false,
-            });
-            $('#fs03').flexslider({
-                slideshowSpeed: 5000,
-                directionNav: false,
-            });
-            /*  $('#slider').flexslider("stop"); */ //Stop slideshow
-        });
-    </script>
 
     <!-- Demo styles -->
     <style>
         .swiper-container {
-          width: 100%;
-            height:75vh;
+            width: 100%;
+            height: 70vh;
             overflow: hidden;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #000;
         }
 
         .swiper-slide {
@@ -115,8 +80,6 @@
         .slides.animate {
             transform: scale(1.1);
             transition: 5s;
-
-
         }
 
         .slides.return {
@@ -210,45 +173,48 @@
 
             </ul>
         </div>
+        <div class="centerTitle"><img src="/img/LOGO-03.png" alt=""></div>
+        <a href="#about"><img class="arrow" src="/img/25.png" alt=""></a>
+       
     </section>
 
     <section id="about">
-        <!--  <div class="about_img">
+            <!--  <div class="about_img">
             <img style="opacity: 0.7" src="./img/03.png" alt="">
         </div> -->
-        <div class="mask  ">
-            <div class="container d-flex ">
-                <div class="row    ">
+            <div class="mask  ">
+                <div class="container d-flex ">
+                    <div class="row    ">
 
-                    <div class="col-lg-auto   " style="margin-top:5vw">
+                        <div class="col-lg-auto   " style="margin-top:5vw">
 
-                        <div class="title_vtrl"
-                            style="line-height:1.2;border-top:2px solid;font-size:1.2rem; padding-top:10px; ">
-                            <c style="margin-top: 120px;color:rgb(172, 0, 0)">about</c> <br> <b
-                                style="font-size:2.2rem">關於野人</b>
+                            <div class="title_vtrl"
+                                style="line-height:1.2;border-top:2px solid;font-size:1.6rem; padding-top:10px; ">
+                                <c style="margin-top: 110px;color:rgb(172, 0, 0)">about</c> <br> <b
+                                    style="font-size:2.2rem">關於野人</b>
+                            </div>
+
                         </div>
-
-                    </div>
-                    <!--  <div class="col-1 align-self-center">
+                        <!--  <div class="col-1 align-self-center">
                         
                     </div>  -->
-                    <div class="col-lg-8  align-self-center ">
-                        <img width="100%" src="img/04.jpg" alt="">
-                    </div>
-                    <div class="col-lg-2  align-self-center">
-                        <p
-                            style="display:inline-block;font-weight:600;font-size:1.2rem;color:rgb(121, 103, 2);border-bottom:1.5px rgb(121, 103, 2) solid; ">
-                            「野人」是個名詞，也是種生活態度</p>
-                        <p style=" font-weight:600;text-align:justify;font-size:1rem">
-                            在野人的世界: <br>
-                            「肉，沒有冷凍 <br>
-                            湯，沒有多餘的添加物 <br>
-                            讓用餐的的一切回歸最初的感動」
-                        </p>
+                        <div class="col-lg-8  align-self-center ">
+                            <img width="100%" src="img/04.jpg" alt="">
+                        </div>
+                        <div class="col-lg-2  align-self-center">
+                            <p
+                                style="display:inline-block;font-weight:600;font-size:1.2rem;color:rgb(121, 103, 2);border-bottom:1.5px rgb(121, 103, 2) solid; ">
+                                「野人」是個名詞，也是種生活態度</p>
+                            <p style=" font-weight:600;text-align:justify;font-size:1rem">
+                                在野人的世界: <br>
+                                「肉，沒有冷凍 <br>
+                                湯，沒有多餘的添加物 <br>
+                                讓用餐的的一切回歸最初的感動」
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section id="news">
@@ -256,8 +222,8 @@
             <div class="row">
                 <div class="col-lg-auto  " style="margin-top:5vw">
                     <div class="title_vtrl pb-3"
-                        style="line-height:1.2;border-top:2px solid;font-size:1.2rem; padding-top:10px;">
-                        <c style="margin-top: 120px;color:rgb(172, 0, 0)">news</c> <br> <b
+                        style="line-height:1.2;border-top:2px solid;font-size:1.6rem; padding-top:10px;">
+                        <c style="margin-top: 110px;color:rgb(172, 0, 0)">news</c> <br> <b
                             style="font-size:2.2rem">最新消息</b>
                     </div>
                 </div>
@@ -288,9 +254,9 @@
         <div class="container-fluid ">
             <div class="row justify-content-center no-gutters">
                 <div class="col-lg-auto  p-5">
-                    <div class="" style="line-height:1.2;border-top:2px solid;font-size:1.2rem; padding-top:10px; ">
+                    <div class="" style="line-height:1.2;border-top:2px solid;font-size:1.6rem; padding-top:10px; ">
                         <b style="font-size:2.2rem">精選鍋物</b><br>
-                        <c style="margin-left: 110px;color:rgb(172, 0, 0)">soup</c>
+                        <c style="margin-left: 112px;color:rgb(172, 0, 0)">soup</c>
                     </div>
                 </div>
             </div>
@@ -341,65 +307,116 @@
 
     <section id="menu">
         <!-- Swiper -->
-        <div class="container-fluid ">
-            <div class="row justify-content-center no-gutters">
-                <div class="col-lg-auto  p-5">
-                    <div class="" style="line-height:1.2;border-top:2px solid;font-size:1.2rem; padding-top:10px; ">
-                        <b style="font-size:2.2rem">野人菜單</b><br>
-                        <c style="margin-left: 110px;color:rgb(172, 0, 0)">menu</c>
+        <div class="container ">
+            <div class="row justify-content-center ">
+                <div class="col-lg-auto  pt-5 ">
+                    <div class="" style="line-height:1.2;border-top:2px solid;font-size:1.6rem; padding-top:10px; ">
+                        <b style="font-size:2.4rem">野人菜單</b><br>
+                        <c style="margin-left: 118px;color:rgb(172, 0, 0)">menu</c>
                     </div>
                 </div>
             </div>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="/img/菜單-01.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide  ">
-                        <img src="/img/菜單-02.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide"><img src="/img/菜單-03.jpg" alt=""></div>
+                    <a class="swiper-slide" href="/img/菜單-02.jpg" data-lightbox="image-1"><img src="/img/菜單-02.jpg"
+                            alt=""></a>
+                    <a class="swiper-slide" href="/img/菜單-02.jpg" data-lightbox="image-1"><img src="/img/菜單-03.jpg"
+                            alt=""></a>
+                    <a class="swiper-slide" href="/img/菜單-02.jpg" data-lightbox="image-1"><img src="/img/菜單-04.jpg"
+                            alt=""></a>
+                    <a class="swiper-slide" href="/img/菜單-02.jpg" data-lightbox="image-1"><img src="/img/菜單-02.jpg"
+                            alt=""></a>
+                    <a class="swiper-slide" href="/img/菜單-02.jpg" data-lightbox="image-1"><img src="/img/菜單-02.jpg"
+                            alt=""></a>
+                    <a class="swiper-slide" href="/img/菜單-02.jpg" data-lightbox="image-1"><img src="/img/菜單-02.jpg"
+                            alt=""></a>
+                    <a class="swiper-slide" href="/img/菜單-02.jpg" data-lightbox="image-1"><img src="/img/菜單-02.jpg"
+                            alt=""></a>
+                    <a class="swiper-slide" href="/img/菜單-02.jpg" data-lightbox="image-1"><img src="/img/菜單-02.jpg"
+                            alt=""></a>
+                    <a class="swiper-slide" href="/img/菜單-02.jpg" data-lightbox="image-1"><img src="/img/菜單-02.jpg"
+                            alt=""></a>
+                    <a class="swiper-slide" href="/img/菜單-02.jpg" data-lightbox="image-1"><img src="/img/菜單-02.jpg"
+                            alt=""></a>
+                    <a class="swiper-slide" href="/img/菜單-02.jpg" data-lightbox="image-1"><img src="/img/菜單-02.jpg"
+                            alt=""></a>
                 </div>
                 <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination swiper-button-black"></div>
                 <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next swiper-button-black"></div>
+                <div class="swiper-button-prev swiper-button-black"></div>
             </div>
         </div>
 
     </section>
+
     <footer>
         <p>本專題僅供上益資訊個人專題使用</p>
     </footer>
 
-    <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script src="/js/swiper.animate.min.js"></script> -->
-
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="/js/swiper.animate.min.js"></script>
+    <script src="/js/lightbox-plus-jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+    <script src="/js/jquery.flexslider.js"></script>
 
+    <script>
+        $(document).ready(function () {
+            $('#fs01').flexslider({
+                animation: "fade",
+                slideshowSpeed: 5000,
+                animationDuration: 600,
+                directionNav: false,
+                pauseOnAction: false,
+                start: function (slider) {
+                    $('#slides01').toggleClass('animate');
+                }, //Callback: function(slider) - Fires when the slider loads the first slide 加载第一页触发
+                before: function (slider) {
+                    $('#slides01').toggleClass('animate');
+                }, //Callback: function(slider) - Fires asynchronously with each slider animation 每个滚动动画开始时异步触发
+                after: function (slider) {
+                    $('#slides01').toggleClass('animate');
+                }, //Callback: function(slider) - Fires after each slider animation completes 每个滚动动画结束时触发
+                end: function (slider) {
+                    /*   $('.slides').toggleClass('animate'); */
+                }
+            });
+            $('#fs02').flexslider({
+                slideshowSpeed: 5000,
+                directionNav: false,
+            });
+            $('#fs03').flexslider({
+                slideshowSpeed: 5000,
+                directionNav: false,
+            });
+            /*  $('#slider').flexslider("stop"); */ //Stop slideshow
+        });
+    </script>
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
-            slideToClickedSlide: false,
+            slideToClickedSlide: true,
             spaceBetween: 00,
             centeredSlides: true,
             effect: 'fade',
-            /* fadeEffect: {
+            fadeEffect: {
                 crossFade: true,
-            }, */
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
             },
+            /* autoplay: {
+               delay: 3000,
+               disableOnInteraction: false,
+           },  */
             pagination: {
                 el: '.swiper-pagination',
-                clickable: false,
+                clickable: true,
             },
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -462,7 +479,12 @@
 
         });
     </script>
-
+    <script>
+        lightbox.option({
+            'resizeDuration': 400,
+            'wrapAround': true
+        })
+    </script>
 </body>
 
 </html>
