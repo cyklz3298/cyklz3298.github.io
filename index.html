@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
     <link href="./css/lightbox.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
     <!-- Demo styles -->
@@ -175,46 +176,51 @@
         </div>
         <div class="centerTitle animated fadeIn"><img src="/img/LOGO-03.png" alt=""></div>
         <a href="#about"><img class="arrow animated slideInDown" src="/img/25.png" alt=""></a>
-       
+
     </section>
 
     <section id="about">
-            <!--  <div class="about_img">
+        <!--  <div class="about_img">
             <img style="opacity: 0.7" src="./img/03.png" alt="">
         </div> -->
-            <div class="mask  ">
-                <div class="container d-flex ">
-                    <div class="row    ">
+        <div class="mask  ">
+            <div class="container d-flex ">
+                <div class="row    ">
 
-                        <div class="col-lg-auto   " style="margin-top:5vw">
+                    <div class="col-lg-auto   " style="margin-top:5vw">
 
-                            <div class="title_vtrl"
-                                style="line-height:1.2;border-top:2px solid;font-size:1.6rem; padding-top:10px; ">
-                                <c style="margin-top: 110px;color:rgb(172, 0, 0)">about</c> <br> <b
-                                    style="font-size:2.2rem">關於野人</b>
-                            </div>
-
+                        <div class="title_vtrl"
+                            style="line-height:1.2;border-top:2px solid;font-size:1.6rem; padding-top:10px; "
+                            data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
+                            data-aos-delay="1500" data-aos-easing="ease-in-back">
+                            <c style="margin-top: 110px;color:rgb(172, 0, 0)">about</c> <br> <b
+                                style="font-size:2.2rem">關於野人</b>
                         </div>
-                        <!--  <div class="col-1 align-self-center">
+
+                    </div>
+                    <!--  <div class="col-1 align-self-center">
                         
                     </div>  -->
-                        <div class="col-lg-8  align-self-center ">
-                            <img width="100%" src="img/04.jpg" alt="">
-                        </div>
-                        <div class="col-lg-2  align-self-center">
-                            <p
-                                style="display:inline-block;font-weight:600;font-size:1.2rem;color:rgb(121, 103, 2);border-bottom:1.5px rgb(121, 103, 2) solid; ">
-                                「野人」是個名詞，也是種生活態度</p>
-                            <p style=" font-weight:600;text-align:justify;font-size:1rem">
-                                在野人的世界: <br>
-                                「肉，沒有冷凍 <br>
-                                湯，沒有多餘的添加物 <br>
-                                讓用餐的的一切回歸最初的感動」
-                            </p>
-                        </div>
+                    <div class="col-lg-8  align-self-center " data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"
+                        data-aos-easing="ease-in-back" data-aos-delay="2000">
+                        <img width="100%" src="img/04.jpg" alt="">
+                    </div>
+                    <div class="col-lg-2  align-self-center" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-easing="ease-in-back" data-aos-anchor-placement="bottom-bottom" data-aos-delay="2500">
+                        <p
+                            style="display:inline-block;font-weight:600;font-size:1.2rem;color:rgb(121, 103, 2);border-bottom:1.5px rgb(121, 103, 2) solid; ">
+                            「野人」是個名詞，也是種生活態度</p>
+                        <p style=" font-weight:600;text-align:justify;font-size:1rem">
+                            在野人的世界: <br>
+                            「肉，沒有冷凍 <br>
+                            湯，沒有多餘的添加物 <br>
+                            讓用餐的的一切回歸最初的感動」
+                        </p>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <section id="news">
@@ -332,7 +338,7 @@
                             alt=""></a>
                     <a class="swiper-slide" href="/img/菜單-14.jpg" data-lightbox="image-1"><img src="/img/菜單-14.jpg"
                             alt=""></a>
-<!--                     <a class="swiper-slide" href="/img/菜單-02.jpg" data-lightbox="image-1"><img src="/img/菜單-02.jpg"
+                    <!--                     <a class="swiper-slide" href="/img/菜單-02.jpg" data-lightbox="image-1"><img src="/img/菜單-02.jpg"
                             alt=""></a>
                     <a class="swiper-slide" href="/img/菜單-02.jpg" data-lightbox="image-1"><img src="/img/菜單-02.jpg"
                             alt=""></a>
@@ -367,6 +373,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
     <script src="/js/jquery.flexslider.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -454,7 +461,6 @@
          console.log(window.screen.height); */
 
         $(window).scroll(function () {
-
             var scrollTop = $(window).scrollTop();
             /*   console.log(scrollTop); */
             if ($(window).width() <= 414) {
@@ -479,11 +485,16 @@
 
         });
     </script>
+
     <script>
         lightbox.option({
             'resizeDuration': 400,
             'wrapAround': false
         })
+    </script>
+
+    <script>
+        AOS.init();
     </script>
 </body>
 
