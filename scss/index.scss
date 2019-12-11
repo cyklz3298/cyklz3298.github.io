@@ -19,6 +19,10 @@ body {
   text-orientation: upright;
 }
 nav {
+  a img{
+    width: 60px;
+    height: 60px;
+  }
   .navbar-nav {
     .nav-item {
       font-size: 18px;
@@ -56,7 +60,7 @@ nav {
     z-index: 5;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -50%);
 
     animation-duration: 5.5s;
     animation-delay: 0.5s;
@@ -66,7 +70,7 @@ nav {
     width: 50px;
     z-index: 5;
     position: absolute;
-    bottom: 16%;
+    bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
     

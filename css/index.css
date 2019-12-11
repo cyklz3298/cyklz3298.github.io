@@ -24,6 +24,11 @@ body {
   text-orientation: upright;
 }
 
+nav a img {
+  width: 60px;
+  height: 60px;
+}
+
 nav .navbar-nav .nav-item {
   font-size: 18px;
   color: white !important;
@@ -60,8 +65,8 @@ nav .navbar-nav .nav-item:hover {
   z-index: 5;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -100%);
-          transform: translate(-50%, -100%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   -webkit-animation-duration: 5.5s;
           animation-duration: 5.5s;
   -webkit-animation-delay: 0.5s;
@@ -78,7 +83,7 @@ nav .navbar-nav .nav-item:hover {
   width: 50px;
   z-index: 5;
   position: absolute;
-  bottom: 16%;
+  bottom: 3%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
