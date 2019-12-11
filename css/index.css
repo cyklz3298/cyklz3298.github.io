@@ -24,9 +24,63 @@ body {
   text-orientation: upright;
 }
 
+.flexslider {
+  border: 0;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 0;
+  /* max-width: 100%;
+  height: auto; */
+}
+
+.slides.animate {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: 10s;
+  transition: 10s;
+}
+
+#fs01 .flex-control-nav {
+  /*  height: 100%; */
+  right: 3%;
+  top: calc(94% - 11px);
+  z-index: 8999;
+  width: 11px;
+  position: absolute;
+}
+
+#fs02 .flex-control-nav {
+  /* height: 100%; */
+  right: 3%;
+  top: calc(90% - 11px);
+  z-index: 8999;
+  width: 11px;
+  position: absolute;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 nav a img {
   width: 60px;
   height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  nav a img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    /*   background-image: url("img/08.png");
+     background-size: contain;
+    background-repeat: no-repeat; */
+  }
 }
 
 nav .navbar-nav .nav-item {

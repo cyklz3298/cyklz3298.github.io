@@ -66,45 +66,13 @@
 
         }
 
-        .flexslider {
-            border: 0;
-            overflow: hidden;
-            position: relative;
-            margin-bottom: 0;
-            /* max-width: 100%;
-            height: auto; */
-        }
-
-
-
-
-        .slides.animate {
-            transform: scale(1.5);
-            transition: 10s;
-        }
+       
 
         .slides.return {
             transform: none;
             transition: 0s;
         }
 
-        #fs01 .flex-control-nav {
-           /*  height: 100%; */
-            right: 3%;
-            top: calc(94% - 11px);
-            z-index: 8999;
-            width: 11px;
-            position: absolute;
-        }
-
-        #fs02 .flex-control-nav {
-            /* height: 100%; */
-            right: 3%;
-            top: calc(90% - 11px);
-            z-index: 8999;
-            width: 11px;
-            position: absolute;
-        }
 
         #fs03 .flex-control-nav {
          /*    height: 100%; */
@@ -116,12 +84,6 @@
         }
 
 
-        .navbar {
-            background-color: rgba(0, 0, 0, .0);
-            /*   background-image: url("img/08.png");
-             background-size: contain;
-            background-repeat: no-repeat; */
-        }
 
         /* 
 
@@ -187,7 +149,7 @@
             <div class="container d-flex justify-content-center">
                 <div class="row  pl-2  ">
 
-                    <div class="col-lg-auto   " style="margin-top:6vw">
+                    <div class="col-lg-auto   " style="margin-top:5vw">
 
                         <div class="title_vtrl"
                             style="line-height:1.2;border-top:2px solid;font-size:1.6rem; padding-top:10px; "
@@ -226,7 +188,7 @@
     <section id="news">
         <div class="container">
             <div class="row pl-2">
-                <div class="col-lg-auto  " style="margin-top:6vw">
+                <div class="col-lg-auto  " style="margin-top:5vw">
                     <div class="title_vtrl pb-3"
                         style="line-height:1.2;border-top:2px solid;font-size:1.6rem; padding-top:10px;">
                         <c style="margin-top: 110px;color:rgb(172, 0, 0)">news</c> <br> <b
@@ -312,7 +274,7 @@
         </div> -->
         <div class="container">
             <div class="row   justify-content-center">
-                <div class="col-lg-auto  text-center p-5">
+                <div class="col-lg-auto  text-center p-4">
                     <div class="" style="line-height:1.2;font-size:1.6rem; padding-top:10px;">
                         <b style="font-size:2.4rem;line-height:1.2;border-top:2px solid; padding-top:10px;">精選鍋物</b><br>
                         <c style="margin-left: 150px;color:rgb(172, 0, 0)">soup</c>
@@ -326,9 +288,9 @@
             <div class="col-12">
                 <div class="flexslider" id="fs02">
                     <ul class="slides">
-                        <li><img src="./img/23.jpg" /></li>
-                        <li><img src="./img/22.jpg" /></li>
-                        <li><img src="./img/24.jpg" /></li>
+                        <li style="background-image:url('./img/23.jpg') ;background-size: cover;height: 48vw;"><!-- <img src="./img/23.jpg" /> --></li>
+                        <li style="background-image:url('./img/22.jpg') ;background-size: cover;height: 48vw;"></li>
+                        <li style="background-image:url('./img/24.jpg') ;background-size: cover;height: 48vw;"></li>
                     </ul>
                 </div>
             </div>
@@ -341,7 +303,7 @@
         <!-- Swiper -->
         <div class="container ">
             <div class="row justify-content-center ">
-                <div class="col-lg-auto text-center pt-5 ">
+                <div class="col-lg-auto text-center pt-4 ">
                     <div class="" style=" line-height:1.2;font-size:1.6rem; padding-top:10px;" >
                         <b style="line-height:1.2;border-top:2px solid;padding-top:10px; font-size:2.4rem">野人菜單</b><br>
                         <c style="margin-left: 148px;color:rgb(172, 0, 0)">menu</c>
@@ -492,12 +454,12 @@
             if ($(window).width() <= 414) {
                 // JavaScript here 
                 // 當視窗寬度小等於414px時執行
-                if (scrollTop > 100) {
+               /*  if (scrollTop > 100) {
 
                     $(".navbar").css("background-color", "rgba(0, 0, 0, 0.8)");
                 } else {
                     $(".navbar").css("background-color", "rgba(0, 0, 0, 0)");
-                }
+                } */
             } else {
                 // JavaScript here
                 // 當視窗寬度不小於414px時執行

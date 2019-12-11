@@ -18,11 +18,55 @@ body {
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
+.flexslider {
+  border: 0;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 0;
+  /* max-width: 100%;
+  height: auto; */
+}
+.slides.animate {
+  transform: scale(1.5);
+  transition: 10s;
+}
+
+#fs01 .flex-control-nav {
+  /*  height: 100%; */
+  right: 3%;
+  top: calc(94% - 11px);
+  z-index: 8999;
+  width: 11px;
+  position: absolute;
+}
+
+#fs02 .flex-control-nav {
+  /* height: 100%; */
+  right: 3%;
+  top: calc(90% - 11px);
+  z-index: 8999;
+  width: 11px;
+  position: absolute;
+}
 nav {
-  a img{
+  a img {
     width: 60px;
     height: 60px;
+    @media screen and(max-width:768px) {
+      width: 50px;
+      height: 50px;
+    }
   }
+
+  background-color: rgba(0, 0, 0, 0);
+  @media screen and(max-width:414px) {
+    background-color: rgba(0, 0, 0, 0.8);
+
+    /*   background-image: url("img/08.png");
+     background-size: contain;
+    background-repeat: no-repeat; */
+  }
+
   .navbar-nav {
     .nav-item {
       font-size: 18px;
@@ -73,8 +117,8 @@ nav {
     bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
-    
-    animation-duration:1.6s;
+
+    animation-duration: 1.6s;
     animation-delay: 0.5s;
     animation-iteration-count: infinite;
   }
@@ -191,7 +235,7 @@ top:0%; */
   background-size: cover;
   background-repeat: repeat;
   width: 100%;
- /*  height: AUTO; */
+  /*  height: AUTO; */
   .swiper-container {
     img {
       height: 67vh;
