@@ -51,6 +51,7 @@ body {
 
 #fs02 .flex-control-nav {
   /* height: 100%; */
+  display: none;
   right: 3%;
   top: calc(90% - 11px);
   z-index: 8999;
@@ -58,24 +59,24 @@ body {
   position: absolute;
 }
 
-nav {
+.navbar {
   background-color: rgba(0, 0, 0, 0);
 }
 
-nav a img {
+.navbar a img {
   width: 60px;
   height: 60px;
 }
 
 @media screen and (max-width: 768px) {
-  nav a img {
+  .navbar a img {
     width: 50px;
     height: 50px;
   }
 }
 
 @media screen and (max-width: 414px) {
-  nav {
+  .navbar {
     background-color: rgba(0, 0, 0, 0.8);
     /*   background-image: url("img/08.png");
      background-size: contain;
@@ -83,7 +84,7 @@ nav a img {
   }
 }
 
-nav .navbar-nav .nav-item {
+.navbar .navbar-nav .nav-item {
   font-size: 18px;
   color: white !important;
   padding: 0;
@@ -95,7 +96,7 @@ nav .navbar-nav .nav-item {
   font-weight: 500;
 }
 
-nav .navbar-nav .nav-item:hover {
+.navbar .navbar-nav .nav-item:hover {
   background-color: #b6b6b6;
   color: black !important;
   font-weight: 550;
@@ -250,6 +251,26 @@ top:0%; */
           box-shadow: 5px 5px 8px #5c5c5c;
 }
 
+@media screen and (max-width: 768px) {
+  #news img {
+    width: 50%;
+    margin-left: 22vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #news img {
+    width: 70%;
+    margin-left: 15vw;
+  }
+}
+
+#news h3:nth-child(1) {
+  width: 60%;
+  border-style: double;
+  background-color: white;
+}
+
 #news .card-title {
   text-align: center;
 }
@@ -262,6 +283,34 @@ top:0%; */
   background-repeat: repeat;
   width: 100%;
   /* height: 100vh; */
+}
+
+#soup li {
+  background-position: center, center;
+  width: 100%;
+}
+
+#soup .textConttent01 {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  margin-top: 220px;
+  text-shadow: 2px 2px 5px black;
+}
+
+#soup .textConttent01 h1 {
+  font-size: 2.4rem;
+  color: white;
+}
+
+#soup .textConttent01 h1::before {
+  content: "";
+  border-left: 3px #848d00 solid;
+  margin-right: 10px;
+}
+
+#soup .textConttent01 p {
+  font-size: 1.5rem;
+  color: white;
 }
 
 #soup .container-fluid {
@@ -286,12 +335,30 @@ top:0%; */
   height: auto;
 }
 
+#add {
+  height: 100vh;
+  background-image: url("/img/27.png");
+  background-position: 0% 20%;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  #add {
+    background-position: 100% 0%;
+  }
+}
+
+#add .mask {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(236, 236, 236, 0.644);
+}
+
 #menu {
   background-image: url("../img/16.jpg");
   background-attachment: fixed;
   padding-top: 50px;
   background-size: cover;
-  background-repeat: repeat;
   width: 100%;
   /*  height: AUTO; */
 }

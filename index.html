@@ -66,7 +66,7 @@
 
         }
 
-       
+
 
         .slides.return {
             transform: none;
@@ -75,7 +75,7 @@
 
 
         #fs03 .flex-control-nav {
-         /*    height: 100%; */
+            /*    height: 100%; */
             right: 3%;
             top: calc(90% - 11px);
             z-index: 8999;
@@ -121,6 +121,7 @@
                     <a class="nav-item nav-link" href="#news">最新消息</a>
                     <a class="nav-item nav-link" href="#soup">精選鍋物</a>
                     <a class="nav-item nav-link" href="#menu">野人菜單</a>
+                    <a class="nav-item nav-link" href="#add">分店資訊</a>
                     <a class="nav-item nav-link" href="https://inline.app/booking/savageshabu">線上訂位</a>
                     <!-- <a class="nav-item nav-link " href="#" tabindex="-1" aria-disabled="true">第四頁</a>  -->
                 </div>
@@ -133,12 +134,10 @@
             <ul class="slides" id="slides01">
                 <li><img src="./img/banner_tiny01.jpg" /></li>
                 <li><img src="./img/banner_tiny02.jpg" /></li>
-
             </ul>
         </div>
         <div class="centerTitle animated fadeIn"><img src="/img/LOGO-03.png" alt=""></div>
         <a href="#about"><img class="arrow animated slideInDown" src="/img/25.png" alt=""></a>
-
     </section>
 
     <section id="about">
@@ -148,28 +147,24 @@
         <div class="mask  ">
             <div class="container d-flex justify-content-center">
                 <div class="row  pl-2  ">
-
                     <div class="col-lg-auto   " style="margin-top:5vw">
-
                         <div class="title_vtrl"
                             style="line-height:1.2;border-top:2px solid;font-size:1.6rem; padding-top:10px; "
                             data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
-                            data-aos-delay="1500" data-aos-easing="ease-in-back">
+                            data-aos-easing="ease-in-back">
                             <c style="margin-top: 110px;color:rgb(172, 0, 0)">about</c> <br> <b
                                 style="font-size:2.2rem">關於野人</b>
                         </div>
-
                     </div>
                     <!--  <div class="col-1 align-self-center">
                         
                     </div>  -->
-                    <div class="col-lg-8  align-self-center " data-aos="fade-up"
-                        data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"
-                        data-aos-easing="ease-in-back" data-aos-delay="2000">
+                    <div class="col-lg-8  align-self-center " data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-in-back">
                         <img width="100%" src="img/04.jpg" alt="">
                     </div>
                     <div class="col-lg-2  align-self-center" data-aos="fade-up" data-aos-duration="1000"
-                        data-aos-easing="ease-in-back" data-aos-anchor-placement="bottom-bottom" data-aos-delay="2500">
+                        data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-in-back">
                         <p
                             style="display:inline-block;font-weight:600;font-size:1.2rem;color:rgb(121, 103, 2);border-bottom:1.5px rgb(121, 103, 2) solid; ">
                             「野人」是個名詞，也是種生活態度</p>
@@ -200,7 +195,7 @@
             <div class="row justify-content-center mt-0">
                 <div class="col-lg-3 ">
                     <img class="card-img-top img-thumbnail  " src="img/12.png" alt="Card image cap">
-                    <h3 class="card-title mt-3">近期活動</h3>
+                    <h3 class="card-title mt-3 ">近期活動</h3>
                 </div>
                 <div class="col-lg-3">
                     <img class="card-img-top  img-thumbnail " src="img/13.png" alt="Card image cap">
@@ -210,10 +205,9 @@
                     <img class="card-img-top  img-thumbnail " src="img/14.png" alt="Card image cap">
                     <h3 class="card-title mt-3">新品上市</h3>
                 </div>
-                <div class="col-lg-4 d-flex justify-content-center ">
+                <div class="col-lg-4 col-sm-8 d-flex justify-content-center ">
 
-                    <h3 style="width:80%;border-style:double ;background-color:white;"
-                        class="card-title mt-4 px-4 py-2">更多消息</h3>
+                    <h3 class="card-title mt-4 px-4 py-2">更多消息</h3>
                 </div>
             </div>
         </div>
@@ -282,21 +276,54 @@
                 </div>
             </div>
         </div>
-        <div class="container ">
-             <div class="row ">
+        <div class="container pb-5">
+            <div class="row ">
 
-            <div class="col-12">
-                <div class="flexslider" id="fs02">
-                    <ul class="slides">
-                        <li style="background-image:url('./img/23.jpg') ;background-size: cover;height: 48vw;"><!-- <img src="./img/23.jpg" /> --></li>
-                        <li style="background-image:url('./img/22.jpg') ;background-size: cover;height: 48vw;"></li>
-                        <li style="background-image:url('./img/24.jpg') ;background-size: cover;height: 48vw;"></li>
-                    </ul>
+                <div class="col-12">
+                    <div class="flexslider" id="fs02">
+                        <ul class="slides">
+                            <li class="d-flex align-items-center "
+                                style="background-image:url('./img/23.jpg') ;background-size: cover;height: 35vw;">
+                                <!-- <img src="./img/23.jpg" /> -->
+                                <div class="textConttent01 px-4 py-3 ">
+                                    <h1>北海道牛乳</h1>
+                                    <p class="pt-2 pl-3">由北海道鮮奶、昆布、大骨、洋蔥、白甘蔗、小魚乾、柴魚等熬煮而成</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center"
+                                style="background-image:url('./img/22.jpg') ;background-size: cover;height: 35vw;">
+                                <div class="textConttent01  px-4 py-3">
+                                    <h1>厚岸昆布大骨</h1>
+                                    <p class="pt-2 pl-3">由昆布、大骨、洋蔥、白甘蔗、小魚乾、柴魚等熬煮而成</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center"
+                                style="background-image:url('./img/24.jpg') ;background-size: cover;height: 35vw;">
+                                <div class="textConttent01 px-4 py-3">
+                                    <h1>野人不吃菜</h1>
+                                    <p class="pt-2 pl-3">肉食主義者。菜盤可更換</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-       
+    </section>
+
+    <section id="add">
+        <div class="mask">
+            <div class="container pt-5">
+                <div class="row justify-content-center ">
+                    <div class="col-lg-auto text-center pt-4 ">
+                        <div class="" style=" line-height:1.2;font-size:1.6rem; padding-top:10px;">
+                            <b
+                                style="line-height:1.2;border-top:2px solid;padding-top:10px; font-size:2.4rem">分店據點</b><br>
+                            <c style="margin-left: 148px;color:rgb(172, 0, 0)">address</c>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
     </section>
 
     <section id="menu">
@@ -304,7 +331,7 @@
         <div class="container ">
             <div class="row justify-content-center ">
                 <div class="col-lg-auto text-center pt-4 ">
-                    <div class="" style=" line-height:1.2;font-size:1.6rem; padding-top:10px;" >
+                    <div class="" style=" line-height:1.2;font-size:1.6rem; padding-top:10px;">
                         <b style="line-height:1.2;border-top:2px solid;padding-top:10px; font-size:2.4rem">野人菜單</b><br>
                         <c style="margin-left: 148px;color:rgb(172, 0, 0)">menu</c>
                     </div>
@@ -342,7 +369,6 @@
                 <div class="swiper-button-prev swiper-button-black"></div>
             </div>
         </div>
-
     </section>
 
     <footer>
@@ -454,16 +480,16 @@
             if ($(window).width() <= 414) {
                 // JavaScript here 
                 // 當視窗寬度小等於414px時執行
-               /*  if (scrollTop > 100) {
-
-                    $(".navbar").css("background-color", "rgba(0, 0, 0, 0.8)");
-                } else {
-                    $(".navbar").css("background-color", "rgba(0, 0, 0, 0)");
-                } */
+                /*  if (scrollTop > 100) {
+ 
+                     $(".navbar").css("background-color", "rgba(0, 0, 0, 0.8)");
+                 } else {
+                     $(".navbar").css("background-color", "rgba(0, 0, 0, 0)");
+                 } */
             } else {
                 // JavaScript here
                 // 當視窗寬度不小於414px時執行
-                if (scrollTop > 500) {
+                if (scrollTop > 400) {
 
                     $(".navbar").css("background-color", "rgba(0, 0, 0, 0.8)");
                 } else {
