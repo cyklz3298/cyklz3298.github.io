@@ -351,7 +351,7 @@ top:0%; */
 #add .mask {
   height: 100vh;
   width: 100%;
-  background-color: rgba(236, 236, 236, 0.644);
+  background-color: rgba(236, 236, 236, 0.4);
 }
 
 #menu {
@@ -359,8 +359,18 @@ top:0%; */
   background-attachment: fixed;
   padding-top: 50px;
   background-size: cover;
-  width: 100%;
+  /*  width: 100%; */
   /*  height: AUTO; */
+}
+
+#menu .swiper-container {
+  width: 45%;
+}
+
+@media screen and (max-width: 1024px) {
+  #menu .swiper-container {
+    width: 100%;
+  }
 }
 
 #menu .swiper-container img {
