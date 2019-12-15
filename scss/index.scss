@@ -321,21 +321,18 @@ top:0%; */
     }
   }
   .row {
-    padding-bottom: 50px;
-    .col-lg-4 img {
+    /* padding-bottom: 50px; */
+    .addImg img {
       width: 100%;
     }
-    .col-lg-6 {
+    .addInfo {
       background-color: rgba(255, 255, 255, 0.6);
     }
   }
   h5 {
     padding-bottom: 0;
   }
-  iframe {
-    width: 100%;
-    height: 10%;
-  }
+  
 }
 
 footer {
