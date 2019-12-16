@@ -407,7 +407,7 @@ top:0%; */
 
 @media screen and (max-width: 1024px) {
   #menu .swiper-container {
-    height: 40VH;
+    height: 40vh;
     /*  width: 55%; */
   }
 }
@@ -418,7 +418,7 @@ top:0%; */
 
 @media screen and (max-width: 1024px) {
   #menu .swiper-container img {
-    height: 40VH;
+    height: 40vh;
   }
 }
 
@@ -457,7 +457,19 @@ top:0%; */
 }
 
 #add .addBox {
-  margin-top: 100px;
+  margin-top: 12vw;
+}
+
+@media screen and (max-width: 1024px) {
+  #add .addBox {
+    margin-top: 130px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #add .addBox {
+    margin-top: 20px;
+  }
 }
 
 #add .row {
@@ -482,7 +494,7 @@ top:0%; */
 
 @media screen and (max-width: 1024px) {
   #add .container {
-    height: 50vh;
+    height: 55vh;
   }
 }
 
@@ -496,6 +508,40 @@ top:0%; */
   #add .container {
     height: auto;
   }
+}
+
+#add .card {
+  cursor: pointer;
+}
+
+#add .card .card-body {
+  background-position: center;
+  background-size: cover;
+  height: 20vw;
+}
+
+@media screen and (max-width: 1024px) {
+  #add .card .card-body {
+    height: 30vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #add .card .card-body {
+    height: 55vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #add .card .card-body {
+    height: 65vw;
+  }
+}
+
+#add .card .card-body h3 {
+  display: inline-block;
+  color: white;
+  background-color: rgba(236, 236, 236, 0.418);
 }
 
 footer {

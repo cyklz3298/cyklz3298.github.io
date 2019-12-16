@@ -330,13 +330,13 @@ top:0%; */
   .swiper-container {
     width: 50%;
     @media screen and(max-width:1024px) {
-      height: 40VH;
-     /*  width: 55%; */
+      height: 40vh;
+      /*  width: 55%; */
     }
     img {
       height: 67vh;
       @media screen and(max-width:1024px) {
-       height: 40VH;
+        height: 40vh;
       }
     }
   }
@@ -366,15 +366,20 @@ top:0%; */
       /*   height: 50vh; */
     }
   }
-  .addBox{
-    margin-top: 100px;
+  .addBox {
+    margin-top: 12vw;
+    @media screen and(max-width:1024px) {
+      margin-top: 130px;
+    }
+    @media screen and(max-width:414px) {
+      margin-top: 20px;
+    }
   }
   .row {
     /* padding-bottom: 50px; */
-   
+
     .addImg img {
       width: 100%;
-      
     }
     .addInfo {
       background-color: rgba(255, 255, 255, 0.6);
@@ -386,13 +391,35 @@ top:0%; */
   .container {
     height: 100vh;
     @media screen and(max-width: 1024px) {
-      height: 50vh;
+      height: 55vh;
     }
     @media screen and(max-width:768px) {
       height: auto;
     }
     @media screen and(max-width:414px) {
       height: auto;
+    }
+  }
+  .card {
+    cursor: pointer;
+    .card-body {
+      background-position: center;
+      background-size: cover;
+      height: 20vw;
+      @media screen and(max-width: 1024px) {
+        height: 30vw;
+      }
+      @media screen and(max-width: 768px) {
+        height: 55vw;
+      }
+      @media screen and(max-width: 414px) {
+        height: 65vw;
+      }
+      h3 {
+        display: inline-block;
+        color: white;
+        background-color: rgba(236, 236, 236, 0.418);
+      }
     }
   }
 }
@@ -409,5 +436,4 @@ footer {
   }
   color: white;
   background-color: black;
-
 }
