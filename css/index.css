@@ -52,7 +52,6 @@ body {
 
 #fs02 .flex-control-nav {
   /* height: 100%; */
-  display: none;
   right: 3%;
   top: calc(90% - 11px);
   z-index: 8999;
@@ -196,7 +195,7 @@ body {
 }
 
 #about .container {
-  height: 90vh;
+  height: 95vh;
   /* position: absolute;
 left:0%;
 top:0%; */
@@ -408,12 +407,19 @@ top:0%; */
 
 @media screen and (max-width: 1024px) {
   #menu .swiper-container {
-    width: 100%;
+    height: 40VH;
+    /*  width: 55%; */
   }
 }
 
 #menu .swiper-container img {
   height: 67vh;
+}
+
+@media screen and (max-width: 1024px) {
+  #menu .swiper-container img {
+    height: 40VH;
+  }
 }
 
 #add {
@@ -450,6 +456,10 @@ top:0%; */
   }
 }
 
+#add .addBox {
+  margin-top: 100px;
+}
+
 #add .row {
   /* padding-bottom: 50px; */
 }
@@ -464,6 +474,28 @@ top:0%; */
 
 #add h5 {
   padding-bottom: 0;
+}
+
+#add .container {
+  height: 100vh;
+}
+
+@media screen and (max-width: 1024px) {
+  #add .container {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #add .container {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #add .container {
+    height: auto;
+  }
 }
 
 footer {
