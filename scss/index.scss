@@ -210,10 +210,14 @@ top:0%; */
       border-style: double;
       background-color: white;
       outline: none;
-      transition: 0.6s linear;
+      transition: 0.3s linear;
       &:hover{
         background-color: rgb(192, 192, 192);
-        transition: 0.6s linear;
+        transition: 0.3s linear;
+        /* position: relative;
+        left: -5px;
+        top: -5px;
+        box-shadow: 2px 2px 7px black;; */
        
       }
     }
