@@ -469,6 +469,9 @@ top:0%; */
 footer {
   text-align: center;
   padding: 20px 40px;
+  /* img{
+    width:10vw;
+  } */
   color: white;
   background-color: black;
 }
