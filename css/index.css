@@ -542,6 +542,7 @@ top:0%; */
   display: inline-block;
   color: white;
   background-color: rgba(236, 236, 236, 0.418);
+  text-shadow: 2px 2px 7px black;
 }
 
 footer {
