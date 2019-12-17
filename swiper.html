@@ -38,17 +38,15 @@
       background-size: cover;
     }
 
-    .box {
-      margin-top: 200px;
+    .maskbox {
+      margin-top: 100px;
     }
 
-    .box img {
+    .maskbox{
       width: 200px;
-      height: 200px;
     }
-
-
     
+
 
     .mask {
       background-color: rgba(53, 53, 53, 0.911);
@@ -62,18 +60,25 @@
       background-color: rgba(53, 53, 53, 0.3);
       transition: 0.3s linear;
     }
+    .box img {
+      width: 200px;
+      height: 200px;
+    }
+
   </style>
 </head>
 
 <body>
   <!-- Swiper -->
+  <div class="maskbox"></div>
+    <div class="mask"></div>
+    <div class="box"><img src="/img/14.png" alt=""></div>
+  </div>
 
-  <div class="mask"></div>
-  <div class="box"><img src="/img/14.png" alt=""></div>
 
 
 
- <!--  <div class="swiper-container">
+  <!--  <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide" style="background-image:url(./images/nature-1.jpg)"></div>
       <div class="swiper-slide" style="background-image:url(./images/nature-2.jpg)"></div>
@@ -81,9 +86,9 @@
       <div class="swiper-slide" style="background-image:url(./images/nature-4.jpg)"></div>
       <div class="swiper-slide" style="background-image:url(./images/nature-5.jpg)"></div>
     </div> -->
-    <!-- Add Pagination -->
+  <!-- Add Pagination -->
   <!--   <div class="swiper-pagination swiper-pagination-white"></div> -->
-    <!-- Add Arrows -->
+  <!-- Add Arrows -->
   <!--   <div class="swiper-button-next swiper-button-white"></div>
     <div class="swiper-button-prev swiper-button-white"></div>
   </div> -->

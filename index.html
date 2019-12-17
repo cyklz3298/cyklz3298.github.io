@@ -16,6 +16,8 @@
     <link href="./css/lightbox.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/a35dad623d.js" crossorigin="anonymous"></script>
+
 
     <!-- Demo styles -->
     <style>
@@ -232,8 +234,7 @@
                                 <!-- <img src="./img/23.jpg" /> -->
                                 <div class="textConttent01 px-4 py-3 ">
                                     <h1>北海道牛乳</h1>
-                                    <p class="pt-
-                                    2 pl-3">由北海道鮮奶、昆布、大骨、洋蔥、白甘蔗、小魚乾、柴魚等熬煮而成</p>
+                                    <p class="pt-2 pl-3">由北海道鮮奶、昆布、大骨、洋蔥、白甘蔗、小魚乾、柴魚等熬煮而成</p>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center" style="background-image:url('./img/22.jpg') ;">
@@ -331,63 +332,145 @@
                     </div>
 
                     <!-- Button trigger modal -->
-                 <!--    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                    <!--    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
                         Launch demo modal
                     </button> -->
 
                     <!-- Modal -->
-                    <div class="modal fade" id="tpi" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
+                    <div class="modal fade" id="tpi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                    <h3 class="modal-title  " id="exampleModalLongTitle">野人 台北店</h3>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
+                                <div class="modal-banner" style="background-image: url('/img/28.jpg');"></div>
                                 <div class="modal-body">
-                                    ...
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tpstore-info"
+                                                role="tab" aria-controls="home" aria-selected="true">店面資訊</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tpmap"
+                                                role="tab" aria-controls="profile" aria-selected="false">Google Map</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tpfb_page"
+                                                role="tab" aria-controls="contact" aria-selected="false">粉絲專頁</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="tpstore-info" role="tabpanel"
+                                            aria-labelledby="home-tab">
+                                            <div class="store_content">
+                                                <!-- <h5 class=""><b>野人 台北店</b> </h5> -->
+                                                <b>地址：</b>台北市松山區市民大道四段241號 <br>
+                                                <b>營業時間：</b>
+                                                上午11:30 - 上午4:00 <br>
+                                                電話： 02 2577 5663
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tpmap" role="tabpanel"
+                                            aria-labelledby="profile-tab">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.688828212344!2d121.55174571484203!3d25.04463208396744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abc400f42fe7%3A0x4c8a274041e568c1!2z44CK5Y-w5YyX44CL6YeO5Lq6U2hhYnUg5Ya36JePL-eGn-aIkOmrmOe0muiCieWwiOmWgA!5e0!3m2!1szh-TW!2stw!4v1576227921533!5m2!1szh-TW!2stw"
+                                                frameborder="0" style="border:0;width: 100%; height: 396px;"
+                                                allowfullscreen=""></iframe>
+                                        </div>
+                                        <div class="tab-pane fade" id="tpfb_page" role="tabpanel"
+                                            aria-labelledby="contact-tab">
+                                            <iframe allowtransparency='true' scrolling='no'
+                                                src='//www.facebook.com/v2.5/plugins/page.php?href=https://www.facebook.com/savage.shabu/&amp;width=900&amp;show_facepile=true&amp;small_header=false&amp;hide_cover=false&amp;show_posts=true&amp;locale=zh_TW'
+                                                style='border:none; overflow:hidden;width: 100%;height: 500px;'></iframe>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="modal-footer">
+                                <!-- <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                     <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
 
-                    <div class="modal fade" id="hsu" tabindex="-1" role="dialog"
-                        aria-labelledby="hsu" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
+                    <div class="modal fade" id="hsu" tabindex="-1" role="dialog" aria-labelledby="hsu"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                    <h3 class="modal-title " id="exampleModalLongTitle">野人 花蓮店</h3>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
+                                <div class="modal-banner" style="background-image: url('/img/30.png');"></div>
                                 <div class="modal-body">
-                                    ...
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="home-tab" data-toggle="tab"
+                                                href="#hlstore-info" role="tab" aria-controls="home"
+                                                aria-selected="true">店面資訊</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#hlmap"
+                                                role="tab" aria-controls="profile" aria-selected="false">Google Map</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#hlfb_page"
+                                                role="tab" aria-controls="contact" aria-selected="false">粉絲專頁</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="hlstore-info" role="tabpanel"
+                                            aria-labelledby="home-tab">
+                                            <div class="store_content">
+                                               <!--  <h5 class=""><b>野人 花蓮店</b> </h5> -->
+                                                <b>地址：</b>花蓮縣花蓮市國聯一路169號1樓 <br>
+                                                <b>營業時間：</b>
+                                                上午11:30 - 下午11:59<br>
+                                                電話： 03 835 2083
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="hlmap" role="tabpanel"
+                                            aria-labelledby="profile-tab">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14580.697017712017!2d121.60115400000001!3d23.989623000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdaa6d292f919f712!2z6YeO5Lq6U2hhYnUg5Ya36JePL-eGn-aIkOmrmOe0muiCieWwiOmWgCDoirHok64!5e0!3m2!1szh-TW!2stw!4v1576239414683!5m2!1szh-TW!2stw"
+                                                frameborder="0" style="border:0;width: 100%; height: 396px;"
+                                                allowfullscreen=""></iframe>
+                                        </div>
+                                        <div class="tab-pane fade" id="hlfb_page" role="tabpanel"
+                                            aria-labelledby="contact-tab">
+                                            <iframe  allowtransparency='true' scrolling='no'
+                                                src='//www.facebook.com/v2.5/plugins/page.php?href=https://www.facebook.com/SavageHualien/&amp;width=900&amp;show_facepile=true&amp;small_header=false&amp;hide_cover=false&amp;show_posts=true&amp;locale=zh_TW'
+                                                style='border:none; overflow:hidden;width: 100%; height: 500px;'></iframe>
+                                        </div>
+                                    </div>
+                                    <!--    <div class="modal_mask"></div>
+                                     <div class="modal_img"><img src="/img/30.png"></div> -->
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
+                                <!--    <div class="modal-footer"> -->
+                                <!--  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button> -->
+                                <!--  </div> -->
                             </div>
                         </div>
                     </div>
-                   <!--  垂直置中
+                    <!--  垂直置中
                     加入 .modal-dialog-centered 到 .modal-dialog 來使互動視窗垂直置中。
 
                     Copy -->
                     <!-- Button trigger modal -->
-<!--                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
- -->                       <!--  Launch demo modal -->
-<!--                     </button>
+                    <!--                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+ -->
+                    <!--  Launch demo modal -->
+                    <!--                     </button>
  -->
                     <!-- Modal -->
-                    
+
 
                     <!-- <div class="col-lg-4  ">
                         <div class="addImg img-thumbnail"><img src="/img/28.jpg" alt=""></div>
@@ -452,7 +535,7 @@
 
     <footer>
         <!-- <img src="/img/菜單-08-3.png" alt=""> -->
-        <p>本專題僅供上益資訊個人專題使用</p>
+        <p>Copyright © 2019 Shabu | Design by CMY</p>
     </footer>
     <!-- float facebook like box start -->
     <!-- <script id="float_fb" src="//pic.sopili.net/pub/float_fb/widget.js" data-href="https://www.facebook.com/savage.shabu/?epa=SEARCH_BOX" async></script> -->
