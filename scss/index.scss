@@ -191,7 +191,7 @@ top:0%; */
   background-repeat: repeat;
   width: 100%;
   /* height: 100vh; */
-  
+
   img {
     box-shadow: 5px 5px 8px #5c5c5c;
     @media screen and(max-width:768px) {
@@ -366,10 +366,15 @@ top:0%; */
     }
   }
   .addBox {
-    margin-top: 12vw;
+    margin-top: 9vw;
     @media screen and(max-width:1024px) {
       margin-top: 130px;
     }
+    @media screen and(max-width:768px) {
+      margin-top: 80px;
+     
+    }
+
     @media screen and(max-width:414px) {
       margin-top: 20px;
     }
@@ -388,12 +393,12 @@ top:0%; */
     padding-bottom: 0;
   }
   .container {
-    height: 100vh;
+    height: 85vh;
     @media screen and(max-width: 1024px) {
       height: 55vh;
     }
     @media screen and(max-width:768px) {
-      height: auto;
+      height: 118vh;
     }
     @media screen and(max-width:414px) {
       height: auto;
@@ -503,7 +508,7 @@ top:0%; */
           height: 198px;
         } */
     }
-    .mappage{
+    .mappage {
       iframe {
         height: 400px;
         @media screen and(max-width:414px) {
@@ -543,8 +548,33 @@ top:0%; */
 }
 
 footer {
+  position: relative;
   text-align: center;
-  padding: 20px 40px;
+  padding: 30px 0;
+  @media screen and(max-width:768px) {
+    padding: 20px 0;
+  }
+  @media screen and(max-width:414px) {
+    padding: 10px 0;
+  }
+  .logo {
+    position: absolute;
+    width: 8vw;
+    left: 22vw;
+    bottom: 0.7vw;
+    @media screen and(max-width:1024px) {
+      width: 13vw;
+      bottom: 1.7vw;
+      left: 10vw;
+    }
+    @media screen and(max-width:768px) {
+      
+      left: 8vw;
+    }
+    @media screen and(max-width:414px) {
+      display: none;
+    }
+  }
   /* img{
     width:10vw;
   } */
