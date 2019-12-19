@@ -24,12 +24,6 @@
 
     <!-- Demo styles -->
     <style>
-        .swiper-container {
-            width: 41%;
-            height: 70vh;
-            overflow: hidden;
-        }
-
         /* .swiper-pagination-bullet-active {
             background-color: #000;
         } */
@@ -227,25 +221,25 @@
             </div>
         </div>
         <div class="container pb-5">
-            <div class="row">
-                <div class="col-12">
+            <div class="row justify-content-center">
+                <div class="col-10 ">
                     <div class="swiper-container" id="swiper02">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide d-flex align-items-center"
+                            <div class="swiper-slide d-flex align-items-end"
                                 style="background-image:url('./img/23.jpg') ;">
                                 <div class="textConttent01 px-4 py-3 ">
                                     <h1>北海道牛乳</h1>
                                     <p class="pt-2 pl-3">由北海道鮮奶、昆布、大骨、洋蔥、白甘蔗、小魚乾、柴魚等熬煮而成</p>
                                 </div>
                             </div>
-                            <div class="swiper-slide d-flex align-items-center"
+                            <div class="swiper-slide d-flex align-items-end"
                                 style="background-image:url('./img/22.jpg') ;">
                                 <div class="textConttent01  px-4 py-3">
                                     <h1>厚岸昆布大骨</h1>
                                     <p class="pt-2 pl-3">由昆布、大骨、洋蔥、白甘蔗、小魚乾、柴魚等熬煮而成</p>
                                 </div>
                             </div>
-                            <div class="swiper-slide d-flex align-items-center"
+                            <div class="swiper-slide d-flex align-items-end"
                                 style="background-image:url('./img/24.jpg') ;">
                                 <div class="textConttent01 px-4 py-3">
                                     <h1>野人不吃菜</h1>
@@ -349,7 +343,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row pt-2 no-gutters  justify-content-center  pb-5 addBox">
+                <div class="row  no-gutters  justify-content-center  pb-5 addBox">
                     <div class="col-lg-5">
                         <div class="card" data-toggle="modal" data-target="#tpi">
                             <div class="card-body  d-flex  align-items-end"
@@ -645,7 +639,7 @@
             },
              autoplay: {
                delay: 5000,
-               disableOnInteraction: false,
+               disableOnInteraction: false
            },
             pagination: {
                 el: '.swiper-pagination',
