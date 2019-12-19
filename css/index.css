@@ -748,6 +748,24 @@ footer .logo {
   }
 }
 
+footer a {
+  color: white;
+}
+
+footer a:active {
+  color: whitesmoke;
+}
+
+footer a:visited {
+  color: whitesmoke;
+}
+
+footer .fa-angle-up {
+  position: absolute;
+  bottom: 0.7vw;
+  right: 24vw;
+}
+
 footer p {
   font-size: 1.1rem;
   margin: 0;

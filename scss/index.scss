@@ -372,7 +372,6 @@ top:0%; */
     }
     @media screen and(max-width:768px) {
       margin-top: 80px;
-     
     }
 
     @media screen and(max-width:414px) {
@@ -568,12 +567,26 @@ footer {
       left: 10vw;
     }
     @media screen and(max-width:768px) {
-      
       left: 8vw;
     }
     @media screen and(max-width:414px) {
       display: none;
     }
+  }
+  a{
+    color:white;
+    &:active{
+      color: whitesmoke;
+    }
+    &:visited{
+      color: whitesmoke;
+    }
+  }
+  .fa-angle-up {
+    position: absolute;
+    bottom: 0.7vw;
+    right: 24vw;
+    
   }
   /* img{
     width:10vw;
