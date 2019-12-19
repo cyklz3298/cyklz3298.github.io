@@ -573,12 +573,12 @@ footer {
       display: none;
     }
   }
-  a{
-    color:white;
-    &:active{
+  a {
+    color: white;
+    &:active {
       color: whitesmoke;
     }
-    &:visited{
+    &:visited {
       color: whitesmoke;
     }
   }
@@ -586,7 +586,17 @@ footer {
     position: absolute;
     bottom: 0.8vw;
     right: 24vw;
-    
+    @media screen and(max-width:1024px) {
+      bottom: 1.7vw;
+      right: 8vw;
+    }
+    @media screen and(max-width:768px) {
+      bottom: 1vw;
+      right: 6vw;
+    }
+    @media screen and(max-width:414px) {
+      display: none;
+    }
   }
   /* img{
     width:10vw;

@@ -766,6 +766,26 @@ footer .fa-arrow-alt-circle-up {
   right: 24vw;
 }
 
+@media screen and (max-width: 1024px) {
+  footer .fa-arrow-alt-circle-up {
+    bottom: 1.7vw;
+    right: 8vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .fa-arrow-alt-circle-up {
+    bottom: 1vw;
+    right: 6vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  footer .fa-arrow-alt-circle-up {
+    display: none;
+  }
+}
+
 footer p {
   font-size: 1.1rem;
   margin: 0;
