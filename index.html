@@ -30,9 +30,9 @@
             overflow: hidden;
         }
 
-        .swiper-pagination-bullet-active {
+        /* .swiper-pagination-bullet-active {
             background-color: #000;
-        }
+        } */
 
         .swiper-slide {
             text-align: left;
@@ -326,10 +326,10 @@
                                     alt=""></a> -->
                         </div>
                         <!-- Add Pagination -->
-                        <div class="swiper-pagination swiper-button-black"></div>
+                        <div class="swiper-pagination"></div>
                         <!-- Add Arrows -->
-                        <div class="swiper-button-next swiper-button-black"></div>
-                        <div class="swiper-button-prev swiper-button-black"></div>
+                        <div class="swiper-button-next "></div>
+                        <div class="swiper-button-prev "></div>
                     </div>
                 </div>
             </div>
@@ -635,7 +635,7 @@
     </script>
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper('#swiper02', {
+        var swiper1 = new Swiper('#swiper02', {
             slideToClickedSlide: true,
             spaceBetween: 00,
             centeredSlides: true,
@@ -643,10 +643,10 @@
             fadeEffect: {
                 crossFade: true,
             },
-            /* autoplay: {
-               delay: 3000,
+             autoplay: {
+               delay: 5000,
                disableOnInteraction: false,
-           },  */
+           },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
