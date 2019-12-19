@@ -760,9 +760,9 @@ footer a:visited {
   color: whitesmoke;
 }
 
-footer .fa-angle-up {
+footer .fa-arrow-alt-circle-up {
   position: absolute;
-  bottom: 0.7vw;
+  bottom: 0.8vw;
   right: 24vw;
 }
 
