@@ -54,7 +54,7 @@ body {
   right: 3%;
   top: calc(90% - 11px);
   z-index: 8999;
-  width: 11px;
+  width: 20px;
   position: absolute;
 }
 
@@ -71,6 +71,13 @@ body {
   .navbar a img {
     width: 50px;
     height: 50px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .navbar a img {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -133,12 +140,18 @@ body {
   width: 200px;
 }
 
+@media screen and (max-width: 414px) {
+  #banner .centerTitle img {
+    width: 100px;
+  }
+}
+
 #banner .arrow {
   width: 50px;
   z-index: 5;
   position: absolute;
   bottom: 3%;
-  left: 50%;
+  left: 45%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   -webkit-animation-duration: 1.6s;
@@ -147,6 +160,12 @@ body {
           animation-delay: 0.5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 414px) {
+  #banner .arrow {
+    width: 40px;
+  }
 }
 
 #about {
@@ -242,6 +261,13 @@ top:0%; */
 
 @media screen and (max-width: 414px) {
   #news img {
+    width: 60%;
+    margin-left: 18vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #news img {
     width: 70%;
     margin-left: 15vw;
   }
@@ -280,9 +306,10 @@ top:0%; */
 }
 
 #soup {
-  background-image: url("../img/16.jpg");
+  background-image: url("../img/20.jpg");
   background-attachment: fixed;
-  padding-top: 50px;
+  padding-top: 140px;
+  padding-bottom: 110px;
   background-size: cover;
   background-repeat: repeat;
   width: 100%;
@@ -394,13 +421,15 @@ top:0%; */
 #menu {
   background-image: url("../img/16.jpg");
   background-attachment: fixed;
-  padding-top: 50px;
+  padding-top: 100px;
+  padding-bottom: 80px;
   background-size: cover;
   /*  width: 100%; */
   /*  height: AUTO; */
 }
 
 #menu .swiper-container {
+  padding-top: 50px;
   width: 50%;
 }
 

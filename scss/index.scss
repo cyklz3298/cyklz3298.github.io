@@ -41,13 +41,14 @@ body {
   pointer-events: none;
 }
 
-#fs02 .flex-control-nav {
-  right: 3%;
+ #fs02 .flex-control-nav {
+   right: 3%;
   top: calc(90% - 11px);
   z-index: 8999;
-  width: 11px;
-  position: absolute;
-}
+  width: 20px;
+  position: absolute; 
+  
+} 
 .navbar {
   a img {
     width: 60px;
@@ -55,6 +56,10 @@ body {
     @media screen and(max-width:768px) {
       width: 50px;
       height: 50px;
+    }
+    @media screen and(max-width:414px) {
+      width: 40px;
+      height: 40px;
     }
   }
 
@@ -99,6 +104,9 @@ body {
   .centerTitle {
     img {
       width: 200px;
+      @media screen and(max-width:414px) {
+        width: 100px;
+      }
     }
     position: absolute;
     z-index: 5;
@@ -112,12 +120,17 @@ body {
   }
   .arrow {
     width: 50px;
+    
+    
     z-index: 5;
     position: absolute;
     bottom: 3%;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
-
+    @media screen and(max-width:414px) {
+      width: 40px;
+      
+    }
     animation-duration: 1.6s;
     animation-delay: 0.5s;
     animation-iteration-count: infinite;
@@ -199,6 +212,10 @@ top:0%; */
       margin-left: 22vw;
     }
     @media screen and(max-width:414px) {
+      width: 60%;
+      margin-left: 18vw;
+    }
+    @media screen and(max-width:320px) {
       width: 70%;
       margin-left: 15vw;
     }
@@ -233,9 +250,10 @@ top:0%; */
 }
 
 #soup {
-  background-image: url("../img/16.jpg");
+  background-image: url("../img/20.jpg");
   background-attachment: fixed;
-  padding-top: 50px;
+  padding-top: 140px;
+  padding-bottom: 110px;
   background-size: cover;
 
   background-repeat: repeat;
@@ -255,7 +273,7 @@ top:0%; */
     background-position: center, center;
     width: 100%;
     background-size: cover;
-    height: 35vw;
+    height:35vw; 
     @media screen and(max-width:1024px) {
       height: 50vw;
     }
@@ -322,11 +340,13 @@ top:0%; */
 #menu {
   background-image: url("../img/16.jpg");
   background-attachment: fixed;
-  padding-top: 50px;
+  padding-top: 100px;
+  padding-bottom: 80px;
   background-size: cover;
   /*  width: 100%; */
   /*  height: AUTO; */
   .swiper-container {
+    padding-top: 50px;
     width: 50%;
     @media screen and(max-width:1024px) {
       height: 40vh;
