@@ -934,28 +934,28 @@ footer a:visited {
   color: whitesmoke;
 }
 
-footer .fa-arrow-alt-circle-up {
+footer .fa-chevron-circle-up {
   position: absolute;
   bottom: 0.8vw;
-  right: 24vw;
+  right: 22vw;
 }
 
 @media screen and (max-width: 1024px) {
-  footer .fa-arrow-alt-circle-up {
+  footer .fa-chevron-circle-up {
     bottom: 1.7vw;
     right: 8vw;
   }
 }
 
 @media screen and (max-width: 768px) {
-  footer .fa-arrow-alt-circle-up {
+  footer .fa-chevron-circle-up {
     bottom: 1vw;
     right: 6vw;
   }
 }
 
 @media screen and (max-width: 414px) {
-  footer .fa-arrow-alt-circle-up {
+  footer .fa-chevron-circle-up {
     display: none;
   }
 }
