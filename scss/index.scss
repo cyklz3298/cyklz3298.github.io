@@ -74,10 +74,10 @@ body {
   font-weight: 100;
   color: #fff;
 }
-.container{
+.container {
   overflow: hidden;
 }
-.container-fluid{
+.container-fluid {
   overflow: hidden;
 }
 .navbar {
@@ -168,9 +168,19 @@ body {
 }
 #about {
   background-image: url("../img/03Tiny.png");
-
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+  .title_vtrl {
+    margin-top: 5vw;
+    @media screen and(max-width:1024px) {
+      margin-top: 7vw;
+    }
+    .col-lg-8 {
+      @media screen and(max-width:1024px) {
+        margin-top: 70vw;
+      }
+    }
+  }
   /* background-repeat: no-repeat;  */
   /*  position: relative; */
   /* .about_img {
@@ -228,13 +238,18 @@ top:0%; */
 
 #news {
   background-image: url("../img/17.jpg");
-  background-attachment: fixed;
+  /*  background-attachment: fixed; */
 
   background-size: cover;
   background-repeat: repeat;
   width: 100%;
   /* height: 100vh; */
-
+  .title_vtrl {
+    margin-top: 5vw;
+    @media screen and(max-width:1024px) {
+      margin-top: 7vw;
+    }
+  }
   img {
     box-shadow: 5px 5px 8px #5c5c5c;
     @media screen and(max-width:768px) {
@@ -321,7 +336,7 @@ top:0%; */
         @media screen and(max-width:768px) {
           margin-bottom: 40px;
         }
-        
+
         text-shadow: 2px 2px 5px black;
         h1 {
           font-size: 2.4rem;
@@ -339,7 +354,7 @@ top:0%; */
         p {
           font-size: 1.2rem;
           color: white;
-          
+
           @media screen and(max-width:414px) {
             font-size: 0.8rem;
             margin-bottom: 0;
@@ -444,7 +459,11 @@ top:0%; */
   background-image: url("/img/27Tiny.png");
   background-position: 0% 15%;
   background-size: cover;
-
+  .title {
+    @media screen and(max-width:320px) {
+      margin-bottom: 20px;
+    }
+  }
   /*  height: 85vh; */
   @media screen and(max-width:1024px) {
     background-position: 100% 0%;
@@ -498,12 +517,16 @@ top:0%; */
     @media screen and(max-width:768px) {
       height: 118vh;
     }
-    @media screen and(max-width:414px) {
-      height: auto;
+    @media screen and(max-width:375px) {
+      height: 120vh;
+    }
+    @media screen and(max-width:320px) {
+      height: 132vh;
     }
   }
   .card {
     cursor: pointer;
+
     .card-body {
       background-position: center;
       background-size: cover;
