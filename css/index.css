@@ -68,6 +68,18 @@ body {
   }
 }
 
+.lb-close {
+  position: absolute;
+  right: 60px;
+  top: -30px;
+}
+
+.close {
+  font-size: 3rem;
+  font-weight: 100;
+  color: #fff;
+}
+
 .navbar {
   background-color: rgba(0, 0, 0, 0);
 }
