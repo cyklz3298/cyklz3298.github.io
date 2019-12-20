@@ -154,6 +154,10 @@ body {
   font-weight: 500;
 }
 
+.navbar .navbar-nav .nav-item i {
+  margin-right: 7px;
+}
+
 .navbar .navbar-nav .nav-item:hover {
   background-color: #b6b6b6;
   color: black !important;
