@@ -50,31 +50,53 @@ body {
   pointer-events: none;
 }
 
-#fs02 .flex-control-nav {
-  right: 3%;
-  top: calc(88% - 11px);
-  z-index: 8999;
-  width: 11px;
-  position: absolute;
-}
-
-@media screen and (max-width: 1024px) {
-  #fs02 .flex-control-nav {
-    right: 3%;
-    bottom: 0%;
-    z-index: 8999;
-    width: 11px;
-    position: absolute;
-  }
-}
-
+/* .swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  background-image: url("none");
+  left: 10px;
+  right: auto;
+} */
+/* .lb-container {
+  position: relative;
+} */
 .lb-close {
   position: absolute;
-  right: 60px;
+  left: 66%;
   top: -30px;
 }
 
+@media screen and (max-width: 1024px) {
+  .lb-close {
+    left: 81%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lb-close {
+    left: 81%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .lb-close {
+    left: 90%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .lb-close {
+    left: 89%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .lb-close {
+    left: 88%;
+  }
+}
+
 .close {
+  /*  modal close position right-top */
   font-size: 3rem;
   font-weight: 100;
   color: #fff;
@@ -402,6 +424,12 @@ top:0%; */
   height: 63vh;
 }
 
+@media screen and (max-width: 1024px) {
+  #soup .swiper-container {
+    height: 50vh;
+  }
+}
+
 #soup .swiper-container .swiper-slide {
   background-position: center, center;
   background-size: cover;
@@ -411,14 +439,19 @@ top:0%; */
   background-color: rgba(255, 255, 255, 0.5);
   width: 100%;
   /* margin-top: 100px; */
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   text-shadow: 2px 2px 5px black;
 }
 
 @media screen and (max-width: 1024px) {
   #soup .swiper-container .swiper-slide .textConttent01 {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #soup .swiper-container .swiper-slide .textConttent01 {
+    margin-bottom: 40px;
   }
 }
 
@@ -429,7 +462,7 @@ top:0%; */
 
 @media screen and (max-width: 414px) {
   #soup .swiper-container .swiper-slide .textConttent01 h1 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     margin-bottom: 0;
   }
 }
@@ -441,13 +474,14 @@ top:0%; */
 }
 
 #soup .swiper-container .swiper-slide .textConttent01 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
 }
 
 @media screen and (max-width: 414px) {
   #soup .swiper-container .swiper-slide .textConttent01 p {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    margin-bottom: 0;
   }
 }
 
