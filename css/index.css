@@ -942,6 +942,10 @@ footer .fa-chevron-circle-up {
   right: 22vw;
 }
 
+footer .fa-chevron-circle-up:hover {
+  color: gray;
+}
+
 @media screen and (max-width: 1024px) {
   footer .fa-chevron-circle-up {
     bottom: 1.7vw;

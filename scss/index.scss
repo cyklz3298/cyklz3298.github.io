@@ -718,6 +718,9 @@ footer {
     position: absolute;
     bottom: 0.8vw;
     right: 22vw;
+    &:hover{
+      color: gray;
+    }
     @media screen and(max-width:1024px) {
       bottom: 1.7vw;
       right: 8vw;
