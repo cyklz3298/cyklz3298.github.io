@@ -121,7 +121,7 @@ body {
         background-color: rgb(182, 182, 182);
         color: black !important;
         font-weight: 550;
-        /* font-size: 20px; */
+        font-size: 20px;
         transition: 0.2s linear;
         text-shadow: none;
       }
@@ -517,6 +517,7 @@ top:0%; */
   .container {
     padding-top: 30px;
     padding-bottom: 220px;
+
     @media screen and(max-width: 1024px) {
       height: 55vh;
     }
@@ -532,11 +533,13 @@ top:0%; */
   }
   .card {
     cursor: pointer;
+    transition: 0.3s linear;
     &:hover {
       box-shadow: 7px 7px 6px black;
       position: relative;
-      top: -10px;
-      right: 10px;
+      top: -5px;
+      right: 5px;
+      transition: 0.3s linear;
     }
     .card-body {
       background-position: center;
