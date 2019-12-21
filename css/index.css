@@ -769,6 +769,14 @@ top:0%; */
   border-bottom: 1px solid #a38a77;
 }
 
+#add .modal .modal-header .close {
+  outline: none;
+}
+
+#add .modal .modal-header .close:hover {
+  color: white;
+}
+
 #add .modal .modal-body {
   border: 1px solid #a38a77;
   /*  height: 60vh;
