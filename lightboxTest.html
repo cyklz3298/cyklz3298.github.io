@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="./css/lightbox.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    
+    <!-- <a href="./img/04.jpg" data-lightbox="image-1" data-title="文字说明">Image #1</a> -->
+
+    <!-- 如果是一组相关的图片，可以对该组图片设置 data-lightbox 属性为相同的值。-->
+    <a href="/img/12.png" data-lightbox="image-1">Image #2</a>
+    <a href="./img/07.jpg" data-lightbox="image-1">Image #3</a>
+    <a href="./img/08.png" data-lightbox="image-1">Image #4</a>
+
+    <script src="./js/lightbox-plus-jquery.js"></script>
+<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ -->   <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+        })
+    </script>
+</body>
+
+</html>
