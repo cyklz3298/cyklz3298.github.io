@@ -36,20 +36,31 @@
             justify-content: start;
             /* background-color: #171a21; */
             /* background-color: #2d354b; */
-            background: linear-gradient(to right, #303542, #171a21);
+            background: linear-gradient(#303542, #13203bf5);
+        }
+
+        @font-face {
+            font-family: 'myFont';
+            src:
+                url('./font/Pixeboy.ttf');
+        }
+
+        .myFont {
+            font-family: 'myFont';
+            font-size: 3rem !important;
         }
 
         .navbar div {
             /* color: #bebcba; */
             color: #ccc9c6;
             font-weight: 600;
-            font-size: 1.1rem;
+            /* font-size: 1.1rem; */
         }
 
         .navbar-nav .nav-link {
             color: #ccc9c6 !important;
             font-weight: 600;
-            /* font-size: 1.1rem; */
+            font-size: 1.1rem;
         }
 
         .navbar-nav .nav-item {
@@ -67,7 +78,7 @@
         }
 
         .navbar-brand img {
-            width: 40px;
+            width: 45px;
         }
 
         .navbar-toggler-icon {
@@ -93,11 +104,12 @@
 
         .main .col-xl-10 {
             /* background: linear-gradient(#1B374B, #1B2838); */
-            height: calc(100vh - 66.61px);
+            height: calc(100vh - 88px);
             background-image: url('./img/bg05.jpg');
             background-repeat: no-repeat;
-            background-position:54% 50%;
+            background-position: 54% 50%;
             background-size: cover;
+            
         }
 
         .main .nav-link {
@@ -107,7 +119,7 @@
         .main .col-xl-2 {
             /* background: linear-gradient(#253865, #253967); */
             /* background-color: #2d354b; */
-            background: linear-gradient(#303542, #171a21);
+            background: linear-gradient(to bottom right, #101a2ef5, #13203bf5);
         }
 
         .side-nav .navbar-nav {
@@ -118,34 +130,12 @@
             width: 100%;
         }
 
-        .mask{
+        .mask {
             width: 100%;
             height: 100%;
             background-color: rgba(255, 255, 255, 0.8);
+         
         }
-
-        /* 
-        .side-nav a:hover {
-            background-color: #93979e;
-            color: #ffffff !important;
-        } */
-        /* .side-nav a:focus {
-            background-color: #93979e;
-            color: #ffffff !important;
-        } */
-
-        /* .side-nav a:visited {
-            background-color: #93979e;
-            color: #ffffff !important;
-        } */
-        /* .side-nav a:not(.focus) {
-            background-color: #224177;
-            color: #880a0a !important;
-        } */
-
-        /* .side-nav a { 
-            text-align: center;
-         }  */
 
         @media (min-width: 991px) {
             .navbar-collapse {
@@ -163,7 +153,7 @@
 
             .side-nav {
                 position: sticky;
-                top: 4.2rem;
+                top: 5.5rem;
                 z-index: 1000;
             }
         }
@@ -183,7 +173,7 @@
 
     <header class="navbar navbar-expand-lg navbar-light bd-navbar">
         <a class="navbar-brand " href="#"><img src="./img/steamLogo2.png" alt=""></a>
-        <div> 遊戲買賣平台 後台管理 </div>
+        <div class="myFont ml-2"> S . F . G </div>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -198,55 +188,54 @@
         <div class="collapse navbar-collapse ">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">
+                <li class="nav-item active">
+                    <!-- <a class="nav-link" href="#">
                         <i class="fal fa-people-arrows"></i>
-                        Home <span class="sr-only">(current)</span></a>
+                    </a> -->
                 </li>
+
+
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <!-- <a class="nav-link" href="">
+                        登入</a> -->
+                    <button type="button" class="btn btn-secondary" data-toggle="modal"
+                        data-target="#exampleModalCenter">
+                        登入
+                    </button>
+
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
+                </li> -->
             </ul>
         </div>
-
-    </header>
-    <!-- <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" style="background-image: url('./img/bg03.jpg'); background-repeat: no-repeat;
+            background-position: 50% 50%; background-size: cover;" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">員工登入</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </nav> -->
+    </header>
 
-    <!-- <nav class="nav">
-        <a class="nav-link active" href="#">Active</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </nav> -->
-
-    <div class="container-fluid main">
+    <div class="container-fluid main ">
         <div class="row">
-            <div class=" col-lg-2  col-xl-2 px-0 ">
+            <div class=" col-lg-2  col-xl-2">
                 <div class="collapse navbar-collapse side-nav accordion" id="navbarSupportedContent">
                     <ul class="navbar-nav ">
                         <li class="nav-item">
@@ -333,32 +322,184 @@
                         <li class="nav-item ">
                             <div class="nav-link" data-toggle="collapse" data-target="#sideNavColl07">
                                 <i class="far fa-envelope-open-text ml-3 mr-2"></i>客服中心</div>
-                                <ul class="nav collapse" id="sideNavColl07" data-parent="#navbarSupportedContent">
-                                    <li class="nav-item">
-                                        <a class="nav-link active pl-4" href="#">客服訊息管理</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link pl-4" href="#">Q&A管理</a>
-                                    </li>
-                                </ul>
+                            <ul class="nav collapse" id="sideNavColl07" data-parent="#navbarSupportedContent">
+                                <li class="nav-item">
+                                    <a class="nav-link active pl-4" href="#">客服訊息管理</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pl-4" href="#">Q&A管理</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item ">
                             <div class="nav-link" data-toggle="collapse" data-target="#sideNavColl08">
                                 <i class="fas fa-address-card ml-3 mr-2"></i>員工管理</div>
-                                <ul class="nav collapse" id="sideNavColl08" data-parent="#navbarSupportedContent">
-                                    <li class="nav-item">
-                                        <a class="nav-link active pl-4" href="#">員工帳號管理</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link pl-4" href="#">員工權限管理</a>
-                                    </li>
-                                </ul>
+                            <ul class="nav collapse" id="sideNavColl08" data-parent="#navbarSupportedContent">
+                                <li class="nav-item">
+                                    <a class="nav-link active pl-4" href="#">員工帳號管理</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pl-4" href="#">員工權限管理</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-10 col-xl-10 px-0"><div class="mask"></div></div>
+            <div class="col-lg-10 col-xl-10 ">
+                <div class="mask">
+                    <div class="comtainer ">
+                        <div class="row pt-5">
+                            <div class="col-lg col-md-6">
+                                <div class="media centerstat py-5 mx-3 mt-4 bg-secondary">
+                                    <i class="fas fa-4x fa-user-times mx-5"></i>
+                                    <div class="ml-2 media-body">
+                                        <h5 class="mt-0"> <b>會員檢舉</b> </h5>
+                                        被檢舉會員數: &nbsp &nbsp 人
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg col-md-6">
+                                <div class="media centerstat bg-secondary text-w py-5 mx-3 mt-4">
+                                    <i class="fad fa-box-usd fa-4x mx-5"></i>
+                                    <div class="ml-2 media-body">
+                                        <h5 class="mt-0"> <b>商品檢舉</b> </h5>
+                                        被檢舉商品數:&nbsp &nbsp 項
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg col-md-6">
+                                <div class="media centerstat bg-secondary py-5 mx-3 mt-4">
+                                    <i class="fal fa-newspaper fa-4x mx-5"></i>
+                                    <div class="ml-2 media-body">
+                                        <h5 class="mt-0"> <b>文章檢舉</b> </h5>
+                                        被檢舉文章數: &nbsp &nbsp 篇
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg col-md-6">
+                                <div class="media centerstat bg-secondary py-5 mx-3 mt-4">
+                                    <i class="fas fa-comment-lines fa-4x mx-5"></i>
+                                    <div class="ml-2 media-body">
+                                        <h5 class="mt-0"> <b>會員客訴</b> </h5>
+                                        待處理客訴:&nbsp &nbsp 件
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row mt-5 ">
+                            <div class="col-4">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                           
+                            <div class="col-4">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-4">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
         </div>
+
     </div>
     </div>
 
